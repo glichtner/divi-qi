@@ -1,0 +1,84 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/DIVIQualityIndicator1> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DIVIQualityIndicator1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition DIVIQualityIndicator1</b></p><a name=\"DIVIQualityIndicator1\"> </a><a name=\"hcDIVIQualityIndicator1\"> </a><a name=\"DIVIQualityIndicator1-en-US\"> </a><p><b>url</b>: <a href=\"PlanDefinition-DIVIQualityIndicator1.html\">PlanDefinition DIVI Quality Indicator 1</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: DiVI_QualityIndicator_1</p><p><b>title</b>: DIVI Quality Indicator 1</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type workflow-definition}\">Workflow Definition</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-03-29</p><p><b>publisher</b>: Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI)</p><p><b>description</b>: </p><div><p>DIVI Quality Indicator 1: Daily multiprofessional ward rounds with documentation of treatment goals</p>\n</div><blockquote><p><b>action</b></p><p><b>title</b>: DIVI Quality Indicator 1a: Daily multiprofessional ward rounds</p><p><b>description</b>: </p><div><p>Every Intensive Care Patient should be visited daily in multiprofessional ward rounds.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-DailyMultiprofessionalWardRounds.html\">Daily multiprofessional ward rounds</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: DIVI Quality Indicator 1b: Daily documentation of treatment goals</p><p><b>description</b>: </p><div><p>Treatment Goals should be documented daily for every Intensive Care Patient.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-DailyDocumentationTreatmentGoals.html\">Daily Documentation of Treatment Goals</a></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "method"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "all" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-1"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0"] ; # 
+  fhir:name [ fhir:v "DiVI_QualityIndicator_1"] ; # 
+  fhir:title [ fhir:v "DIVI Quality Indicator 1"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "workflow-definition" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-29"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI)"] ; # 
+  fhir:description [ fhir:v "DIVI Quality Indicator 1: Daily multiprofessional ward rounds with documentation of treatment goals"] ; # 
+  fhir:action ( [
+     fhir:title [ fhir:v "DIVI Quality Indicator 1a: Daily multiprofessional ward rounds" ] ;
+     fhir:description [ fhir:v "Every Intensive Care Patient should be visited daily in multiprofessional ward rounds." ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/daily-ward-rounds"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/daily-ward-rounds>
+     ]
+  ] [
+     fhir:title [ fhir:v "DIVI Quality Indicator 1b: Daily documentation of treatment goals" ] ;
+     fhir:description [ fhir:v "Treatment Goals should be documented daily for every Intensive Care Patient." ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/daily-treatment-goals"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/daily-treatment-goals>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

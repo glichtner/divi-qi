@@ -1,0 +1,188 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/DIVIQualityIndicator3> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DIVIQualityIndicator3"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition DIVIQualityIndicator3</b></p><a name=\"DIVIQualityIndicator3\"> </a><a name=\"hcDIVIQualityIndicator3\"> </a><a name=\"DIVIQualityIndicator3-en-US\"> </a><p><b>url</b>: <a href=\"PlanDefinition-DIVIQualityIndicator3.html\">PlanDefinition DIVI Quality Indicator 3</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: DiVI_QualityIndicator_3</p><p><b>title</b>: DIVI Quality Indicator 3</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type workflow-definition}\">Workflow Definition</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-03-29</p><p><b>publisher</b>: Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI)</p><p><b>description</b>: </p><div><p>DIVI Quality Indicator 3: Patient-adapted Ventilation</p>\n</div><blockquote><p><b>action</b></p><p><b>title</b>: DIVI Quality Indicator 3a: Tidal Volume Limitation</p><p><b>description</b>: </p><div><p>Tidal volume should be limited to a maximum of 6 ml/kg ideal body weight in all invasive ventilated ICU patients with severe ARDS.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-TidalVolumeLimitation.html\">Tidal Volume Limitation</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: DIVI Quality Indicator 3b: Plateau Pressure Limitation</p><p><b>description</b>: </p><div><p>Plateau pressure should be limited to a maximum of 30 cmH2O in all invasive ventilated ICU patients with severe ARDS.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-PlateauPressureLimitation.html\">Plateau Pressure Limitation</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: DIVI Quality Indicator 3b: Driving Pressure Limitation</p><p><b>description</b>: </p><div><p>Driving pressure should be limited to a maximum of 15 cmH2O in all invasive ventilated ICU patients with severe ARDS.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-DrivingPressureLimitation.html\">Driving Pressure Limitation</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: Facultative Indicator 3d-1: PEEP adjusted in Dependence of FiO2=0.21-0.29</p><p><b>description</b>: </p><div><p>PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-PEEPadjustedToFIO2-21to29.html\">PEEP adjusted to FiO2=0.21-0.29</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: Facultative Indicator 3d-2: PEEP adjusted in Dependence of FiO2=0.3-0.39</p><p><b>description</b>: </p><div><p>PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-PEEPadjustedToFIO2-30to39.html\">PEEP adjusted to FiO2=0.30-0.39</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: Facultative Indicator 3d-3: PEEP adjusted in Dependence of FiO2=0.4-0.49</p><p><b>description</b>: </p><div><p>PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-PEEPadjustedToFIO2-40to49.html\">PEEP adjusted to FiO2=0.40-0.49</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: Facultative Indicator 3d-4: PEEP adjusted in Dependence of FiO2=0.5-0.59</p><p><b>description</b>: </p><div><p>PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-PEEPadjustedToFIO2-50to59.html\">PEEP adjusted to FiO2=0.50-0.59</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: Facultative Indicator 3d-5: PEEP adjusted in Dependence of FiO2=0.6-0.79</p><p><b>description</b>: </p><div><p>PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-PEEPadjustedToFIO2-60to79.html\">PEEP adjusted to FiO2=0.60-0.79</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: Facultative Indicator 3d-6: PEEP adjusted in Dependence of FiO2=0.8-0.99</p><p><b>description</b>: </p><div><p>PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-PEEPadjustedToFIO2-80to99.html\">PEEP adjusted to FiO2=0.80-0.99</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: Facultative Indicator 3d-7: PEEP adjusted in Dependence of FiO2=1.0</p><p><b>description</b>: </p><div><p>PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-PEEPadjustedToFIO2-100.html\">PEEP adjusted to FiO2=1.00</a></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "method"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "all" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-3"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0"] ; # 
+  fhir:name [ fhir:v "DiVI_QualityIndicator_3"] ; # 
+  fhir:title [ fhir:v "DIVI Quality Indicator 3"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "workflow-definition" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-29"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI)"] ; # 
+  fhir:description [ fhir:v "DIVI Quality Indicator 3: Patient-adapted Ventilation"] ; # 
+  fhir:action ( [
+     fhir:title [ fhir:v "DIVI Quality Indicator 3a: Tidal Volume Limitation" ] ;
+     fhir:description [ fhir:v "Tidal volume should be limited to a maximum of 6 ml/kg ideal body weight in all invasive ventilated ICU patients with severe ARDS." ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/tidal-volume_limitation"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/tidal-volume_limitation>
+     ]
+  ] [
+     fhir:title [ fhir:v "DIVI Quality Indicator 3b: Plateau Pressure Limitation" ] ;
+     fhir:description [ fhir:v "Plateau pressure should be limited to a maximum of 30 cmH2O in all invasive ventilated ICU patients with severe ARDS." ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/plateau-pressure_limitation"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/plateau-pressure_limitation>
+     ]
+  ] [
+     fhir:title [ fhir:v "DIVI Quality Indicator 3b: Driving Pressure Limitation" ] ;
+     fhir:description [ fhir:v "Driving pressure should be limited to a maximum of 15 cmH2O in all invasive ventilated ICU patients with severe ARDS." ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/driving-pressure_limitation"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/driving-pressure_limitation>
+     ]
+  ] [
+     fhir:title [ fhir:v "Facultative Indicator 3d-1: PEEP adjusted in Dependence of FiO2=0.21-0.29" ] ;
+     fhir:description [ fhir:v "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS." ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/PEEP_adjustedTo_FiO2-21to29"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/PEEP_adjustedTo_FiO2-21to29>
+     ]
+  ] [
+     fhir:title [ fhir:v "Facultative Indicator 3d-2: PEEP adjusted in Dependence of FiO2=0.3-0.39" ] ;
+     fhir:description [ fhir:v "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS." ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/PEEP_adjustedTo_FiO2-30to39"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/PEEP_adjustedTo_FiO2-30to39>
+     ]
+  ] [
+     fhir:title [ fhir:v "Facultative Indicator 3d-3: PEEP adjusted in Dependence of FiO2=0.4-0.49" ] ;
+     fhir:description [ fhir:v "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS." ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/PEEP_adjustedTo_FiO2-40to49"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/PEEP_adjustedTo_FiO2-40to49>
+     ]
+  ] [
+     fhir:title [ fhir:v "Facultative Indicator 3d-4: PEEP adjusted in Dependence of FiO2=0.5-0.59" ] ;
+     fhir:description [ fhir:v "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS." ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/PEEP_adjustedTo_FiO2-50to59"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/PEEP_adjustedTo_FiO2-50to59>
+     ]
+  ] [
+     fhir:title [ fhir:v "Facultative Indicator 3d-5: PEEP adjusted in Dependence of FiO2=0.6-0.79" ] ;
+     fhir:description [ fhir:v "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS." ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/PEEP_adjustedTo_FiO2-60to79"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/PEEP_adjustedTo_FiO2-60to79>
+     ]
+  ] [
+     fhir:title [ fhir:v "Facultative Indicator 3d-6: PEEP adjusted in Dependence of FiO2=0.8-0.99" ] ;
+     fhir:description [ fhir:v "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS." ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/PEEP_adjustedTo_FiO2-80to99"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/PEEP_adjustedTo_FiO2-80to99>
+     ]
+  ] [
+     fhir:title [ fhir:v "Facultative Indicator 3d-7: PEEP adjusted in Dependence of FiO2=1.0" ] ;
+     fhir:description [ fhir:v "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS." ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/PEEP_adjustedTo_FiO2-100"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/PEEP_adjustedTo_FiO2-100>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

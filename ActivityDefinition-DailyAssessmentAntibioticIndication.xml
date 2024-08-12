@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="DailyAssessmentAntibioticIndication"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActivityDefinition DailyAssessmentAntibioticIndication</b></p><a name="DailyAssessmentAntibioticIndication"> </a><a name="hcDailyAssessmentAntibioticIndication"> </a><a name="DailyAssessmentAntibioticIndication-en-US"> </a><p><b>url</b>: <a href="ActivityDefinition-DailyAssessmentAntibioticIndication.html">ActivityDefinition Daily Assessment of the Indication for Antibiotics</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: DailyAssessmentAntibioticIndication</p><p><b>title</b>: Daily Assessment of the Indication for Antibiotics</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>All Antibiotics are daily re-evaluated for the Indication for each Antibiotic.</p>
+</div><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 230165009}">Indication of</span></p><p><b>timing</b>: Once per1 days</p></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-assessment-antibiotic-indication"/>
+  <version value="7.0"/>
+  <name value="DailyAssessmentAntibioticIndication"/>
+  <title value="Daily Assessment of the Indication for Antibiotics"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-08-12T09:30:16+00:00"/>
+  <publisher value="NUM CODEX+ CELIDA"/>
+  <description value="All Antibiotics are daily re-evaluated for the Indication for each Antibiotic."/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="230165009"/>
+      <display value="Indication of"/>
+    </coding>
+  </code>
+  <timingTiming>
+    <repeat>
+      <frequency value="1"/>
+      <period value="1"/>
+      <periodUnit value="d"/>
+    </repeat>
+  </timingTiming>
+</ActivityDefinition>

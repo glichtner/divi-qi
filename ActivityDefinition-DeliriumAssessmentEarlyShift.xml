@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="DeliriumAssessmentEarlyShift"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActivityDefinition DeliriumAssessmentEarlyShift</b></p><a name="DeliriumAssessmentEarlyShift"> </a><a name="hcDeliriumAssessmentEarlyShift"> </a><a name="DeliriumAssessmentEarlyShift-en-US"> </a><p><b>url</b>: <a href="ActivityDefinition-DeliriumAssessmentEarlyShift.html">ActivityDefinition Delirium Assessment during Early Shift</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: DeliriumAssessmentEarlyShift</p><p><b>title</b>: Delirium Assessment during Early Shift</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>Delirium should be assessed once between 6 AM and &lt;2 PM every day.</p>
+</div><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 733870009}">Assessment of Delirium</span></p><p><b>timing</b>: Once per1 days</p></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/delirium-assessment-early-shift"/>
+  <version value="7.0"/>
+  <name value="DeliriumAssessmentEarlyShift"/>
+  <title value="Delirium Assessment during Early Shift"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-08-12T09:30:16+00:00"/>
+  <publisher value="NUM CODEX+ CELIDA"/>
+  <description value="Delirium should be assessed once between 6 AM and &lt;2 PM every day."/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="733870009"/>
+      <display value="Assessment of Delirium"/>
+    </coding>
+  </code>
+  <timingTiming>
+    <repeat>
+      <frequency value="1"/>
+      <period value="1"/>
+      <periodUnit value="d"/>
+    </repeat>
+  </timingTiming>
+</ActivityDefinition>

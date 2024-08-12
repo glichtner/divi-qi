@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="FirstCommunicationPatientsRelativesWithin72hours"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActivityDefinition FirstCommunicationPatientsRelativesWithin72hours</b></p><a name="FirstCommunicationPatientsRelativesWithin72hours"> </a><a name="hcFirstCommunicationPatientsRelativesWithin72hours"> </a><a name="FirstCommunicationPatientsRelativesWithin72hours-en-US"> </a><p><b>url</b>: <a href="ActivityDefinition-FirstCommunicationPatientsRelativesWithin72hours.html">ActivityDefinition First Communication with Patients and/or their Relatives within 72 hours</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: FirstCommunicationPatientsRelativesWithin72hours</p><p><b>title</b>: First Communication with Patients and/or their Relatives within 72 hours</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>An initial structured communication with the Patients and/or their Relatives occurs within 72 hours of Admission to Intensive Care.</p>
+</div><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 225330006}">Client Participation</span></p><p><b>timing</b>: Once per7 days</p></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/first-communication-patients-relatives-within-24hours"/>
+  <version value="7.0"/>
+  <name value="FirstCommunicationPatientsRelativesWithin72hours"/>
+  <title value="First Communication with Patients and/or their Relatives within 72 hours"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-08-12T09:30:16+00:00"/>
+  <publisher value="NUM CODEX+ CELIDA"/>
+  <description value="An initial structured communication with the Patients and/or their Relatives occurs within 72 hours of Admission to Intensive Care."/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="225330006"/>
+      <display value="Client Participation"/>
+    </coding>
+  </code>
+  <timingTiming>
+    <repeat>
+      <frequency value="1"/>
+      <period value="7"/>
+      <periodUnit value="d"/>
+    </repeat>
+  </timingTiming>
+</ActivityDefinition>

@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "DeliriumAssessmentLateShift",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition DeliriumAssessmentLateShift</b></p><a name=\"DeliriumAssessmentLateShift\"> </a><a name=\"hcDeliriumAssessmentLateShift\"> </a><a name=\"DeliriumAssessmentLateShift-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-DeliriumAssessmentLateShift.html\">ActivityDefinition Delirium Assessment during Late Shift</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: DeliriumAssessmentLateShift</p><p><b>title</b>: Delirium Assessment during Late Shift</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>Delirium should be assessed once between 2 AM and &lt;10 PM every day.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 733870009}\">Assessment of Delirium</span></p><p><b>timing</b>: Once per1 days</p></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/delirium-assessment-late-shift",
+  "version" : "7.0",
+  "name" : "DeliriumAssessmentLateShift",
+  "title" : "Delirium Assessment during Late Shift",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-08-12T09:30:16+00:00",
+  "publisher" : "NUM CODEX+ CELIDA",
+  "description" : "Delirium should be assessed once between 2 AM and <10 PM every day.",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "733870009",
+      "display" : "Assessment of Delirium"
+    }]
+  },
+  "timingTiming" : {
+    "repeat" : {
+      "frequency" : 1,
+      "period" : 1,
+      "periodUnit" : "d"
+    }
+  }
+}

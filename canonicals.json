@@ -1,0 +1,557 @@
+[
+  {
+    "id" : "divi-qi-s",
+    "type" : "CodeSystem",
+    "url" : "http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik",
+    "name" : "DIVI_QI_S"
+  },
+  {
+    "id" : "codex-celida",
+    "type" : "CodeSystem",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/CodeSystem/codex-celida",
+    "name" : "CODEX_CELIDA"
+  },
+  {
+    "id" : "PEEPadjustedToFIO2-100",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/PEEP_adjustedTo_FiO2-100",
+    "version" : "1.0",
+    "name" : "Intervention_PEEP_adjustedTo_FiO2_100"
+  },
+  {
+    "id" : "PEEPadjustedToFIO2-21to29",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/PEEP_adjustedTo_FiO2-21to29",
+    "version" : "1.0",
+    "name" : "Intervention_PEEP_adjustedTo_FiO2_21to29"
+  },
+  {
+    "id" : "PEEPadjustedToFIO2-30to39",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/PEEP_adjustedTo_FiO2-30to39",
+    "version" : "1.0",
+    "name" : "Intervention_PEEP_adjustedTo_FiO2_30to39"
+  },
+  {
+    "id" : "PEEPadjustedToFIO2-40to49",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/PEEP_adjustedTo_FiO2-40to49",
+    "version" : "1.0",
+    "name" : "Intervention_PEEP_adjustedTo_FiO2_40to49"
+  },
+  {
+    "id" : "PEEPadjustedToFIO2-50to59",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/PEEP_adjustedTo_FiO2-50to59",
+    "version" : "1.0",
+    "name" : "Intervention_PEEP_adjustedTo_FiO2_50to59"
+  },
+  {
+    "id" : "PEEPadjustedToFIO2-60to79",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/PEEP_adjustedTo_FiO2-60to79",
+    "version" : "1.0",
+    "name" : "Intervention_PEEP_adjustedTo_FiO2_60to79"
+  },
+  {
+    "id" : "PEEPadjustedToFIO2-80to99",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/PEEP_adjustedTo_FiO2-80to99",
+    "version" : "1.0",
+    "name" : "Intervention_PEEP_adjustedTo_FiO2_80to99"
+  },
+  {
+    "id" : "SedationLevelAnalgesiaLevelDeliriumStatusInAcceptableRanges",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/Sedation-Level_Analgesia-Level_Delirium-Status_In-Acceptable-Ranges",
+    "version" : "1.0",
+    "name" : "Intervention_SedationLevel_AnalgesiaLevel_DeliriumStatus_InAcceptableranges"
+  },
+  {
+    "id" : "AntibioticsIndicationFocusDuration",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/antibiotics_indication-focus-duration",
+    "version" : "1.0",
+    "name" : "Intervention_Antibiotics_IndicationFocusDuration"
+  },
+  {
+    "id" : "FrequencyBloodCultures",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/blood-cultures_frequency",
+    "version" : "1.0",
+    "name" : "Intervention_BloodCultures_Frequency"
+  },
+  {
+    "id" : "DailyDocumentationTreatmentGoals",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/daily-treatment-goals",
+    "version" : "1.0",
+    "name" : "Intervention_DailyTreatmentGoals"
+  },
+  {
+    "id" : "DailyMultiprofessionalWardRounds",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/daily-ward-rounds",
+    "version" : "1.0",
+    "name" : "Intervention_DailyWardRounds"
+  },
+  {
+    "id" : "DischargeWithoutHomeVentilation",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/discharge_longterm-ventilation-facility",
+    "version" : "1.0",
+    "name" : "Intervention_Discharge_DependenceHomeVentilation"
+  },
+  {
+    "id" : "DrivingPressureLimitation",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/driving-pressure_limitation",
+    "version" : "1.0",
+    "name" : "Intervention_DrivingPressure_Limitation"
+  },
+  {
+    "id" : "EarlyEnteralFeeding",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/early-enteral-feeding",
+    "version" : "1.0",
+    "name" : "Intervention_EarlyEnteralFeeding"
+  },
+  {
+    "id" : "HandDisinfectantConsumption",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/hand-disinfectant_consumption",
+    "version" : "1.0",
+    "name" : "Intervention_HandDisinfectant_Consumption"
+  },
+  {
+    "id" : "InfectionDeviceRatio",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/infection-device-ratio",
+    "version" : "1.0",
+    "name" : "Intervention_Infection_Device_Ratio"
+  },
+  {
+    "id" : "InitialCommunicationPatientsRelatives",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/initial-communication_patients-relatives",
+    "version" : "1.0",
+    "name" : "Intervention_Initial_Communication_PatientsRelatives"
+  },
+  {
+    "id" : "InitialMobilization",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/initial-mobilization",
+    "version" : "1.0",
+    "name" : "Intervention_InitialMobilization"
+  },
+  {
+    "id" : "PeriodicAssessmentOfSedationAnalgesiaDelirium",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/periodic-assessment_sedation_analgesia_delirium",
+    "version" : "1.0",
+    "name" : "Intervention_PeriodicAssessment_Sedation_Analgesia_Delirium"
+  },
+  {
+    "id" : "PeriodicAssessmentOfWeaning",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/periodic-assessment_weaning",
+    "version" : "1.0",
+    "name" : "Intervention_PeriodicAssessment_Weaning"
+  },
+  {
+    "id" : "PeriodicCommunicationPatientsRelatives",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/periodic-communication_patients-relatives",
+    "version" : "1.0",
+    "name" : "Intervention_Periodic_Communication_PatientsRelatives"
+  },
+  {
+    "id" : "PeriodicMobilization",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/periodic-mobilization",
+    "version" : "1.0",
+    "name" : "Intervention_PeriodicMobilization"
+  },
+  {
+    "id" : "PlateauPressureLimitation",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/plateau-pressure_limitation",
+    "version" : "1.0",
+    "name" : "Intervention_PlateauPressure_Limitation"
+  },
+  {
+    "id" : "PenumoniaVentilatedPatientRatio",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/pneumonia-ventilated-patients-ratio",
+    "version" : "1.0",
+    "name" : "Intervention_Pneumonia_VentilatedPatients_Ratio"
+  },
+  {
+    "id" : "StopOdersInvasiveDevices",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/stop-orders_invasive-devices",
+    "version" : "1.0",
+    "name" : "Intervention_StopOrders_InvasiveDevices"
+  },
+  {
+    "id" : "SufficientFeeding",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/sufficient-feeding",
+    "version" : "1.0",
+    "name" : "Intervention_SufficientFeeding"
+  },
+  {
+    "id" : "TidalVolumeLimitation",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/tidal-volume_limitation",
+    "version" : "1.0",
+    "name" : "Intervention_TidalVolume_Limitation"
+  },
+  {
+    "id" : "IntensiveCarePatients",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients",
+    "name" : "Population_IntensiveCarePatients"
+  },
+  {
+    "id" : "IntensiveCarePatients-Antibiotic",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_antibiotic",
+    "name" : "Population_IntensiveCarePatients_Antibiotic"
+  },
+  {
+    "id" : "IntensiveCarePatients-ClinicallyFed-NoAdipositas",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_clinically-fed_no-adipositas",
+    "name" : "Population_IntensiveCarePatients_ClinicallyFed_NoAdipositas"
+  },
+  {
+    "id" : "IntensiveCarePatients-IntensiveCareLongerThanThreeDays",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_intensive-care-longer-than-three-days",
+    "name" : "Population_IntensiveCarePatients_IntensiveCareLongerThanThreeDays"
+  },
+  {
+    "id" : "IntensiveCarePatients-InvasiveDevice",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_invasive-device",
+    "name" : "Population_IntensiveCarePatients_InvasiveDevice"
+  },
+  {
+    "id" : "IntensiveCarePatients-InvasiveVentilation",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_invasive-ventilation",
+    "name" : "Population_IntensiveCarePatients_InvasiveVentilation"
+  },
+  {
+    "id" : "IntensiveCarePatients-InvasiveVentilation-NoHomeVentilation",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_invasive-ventilation_no-home-ventilation",
+    "name" : "Population_IntensiveCarePatients_InvasiveVentilation_NoHomeVentilation"
+  },
+  {
+    "id" : "IntensiveCarePatients-PredictedInsufficientEnergyIntake",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_predicted-insufficient-energy-intake",
+    "name" : "Population_IntensiveCarePatients_PredictedInsufficientEnergyIntake"
+  },
+  {
+    "id" : "IntensiveCarePatients-SevereARDS-InvasiveVentilation",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_severe-ards_invasive-ventilation",
+    "name" : "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation"
+  },
+  {
+    "id" : "IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-100",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_severe-ards_invasive-ventilation_FiO2-100",
+    "name" : "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2_100"
+  },
+  {
+    "id" : "IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-21to29",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_severe-ards_invasive-ventilation_FiO2-21to29",
+    "name" : "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2_21to29"
+  },
+  {
+    "id" : "IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-30to39",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_severe-ards_invasive-ventilation_FiO2-30to39",
+    "name" : "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2_30to39"
+  },
+  {
+    "id" : "IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-40to49",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_severe-ards_invasive-ventilation_FiO2-40to49",
+    "name" : "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2_40to49"
+  },
+  {
+    "id" : "IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-50to59",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_severe-ards_invasive-ventilation_FiO2-50to59",
+    "name" : "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2_50to59"
+  },
+  {
+    "id" : "IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-60to79",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_severe-ards_invasive-ventilation_FiO2-60to79",
+    "name" : "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2_60to79"
+  },
+  {
+    "id" : "IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-80to99",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_severe-ards_invasive-ventilation_FiO2-80to99",
+    "name" : "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2_80to99"
+  },
+  {
+    "id" : "IntensiveCarePatients-WithOut-NoMobilizationOrder",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_without_no-mobilization-order",
+    "name" : "Population_IntensiveCarePatients_WithOut_NoMobilizationOrder"
+  },
+  {
+    "id" : "DIVIQualityIndicator1",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-1",
+    "version" : "1.0",
+    "name" : "DiVI_QualityIndicator_1"
+  },
+  {
+    "id" : "DIVIQualityIndicator2",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-2",
+    "version" : "1.0",
+    "name" : "DiVI_QualityIndicator_2"
+  },
+  {
+    "id" : "DIVIQualityIndicator3",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-3",
+    "version" : "1.0",
+    "name" : "DiVI_QualityIndicator_3"
+  },
+  {
+    "id" : "DIVIQualityIndicator4",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-4",
+    "version" : "1.0",
+    "name" : "DiVI_QualityIndicator_4"
+  },
+  {
+    "id" : "DIVIQualityIndicator5",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-5",
+    "version" : "1.0",
+    "name" : "DiVI_QualityIndicator_5"
+  },
+  {
+    "id" : "DIVIQualityIndicator6",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-6",
+    "version" : "1.0",
+    "name" : "DiVI_QualityIndicator_6"
+  },
+  {
+    "id" : "DIVIQualityIndicator7",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-7",
+    "version" : "1.0",
+    "name" : "DiVI_QualityIndicator_7"
+  },
+  {
+    "id" : "DIVIQualityIndicator8",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-8",
+    "version" : "1.0",
+    "name" : "DiVI_QualityIndicator_8"
+  },
+  {
+    "id" : "DIVIQualityIndicator9",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-9",
+    "version" : "1.0",
+    "name" : "DiVI_QualityIndicator_9"
+  },
+  {
+    "id" : "DailyAssessmentAntibioticDuration",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-assessment-antibiotic-duration",
+    "version" : "7.0",
+    "name" : "DailyAssessmentAntibioticDuration"
+  },
+  {
+    "id" : "DailyAssessmentAntibioticFocus",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-assessment-antibiotic-focus",
+    "version" : "7.0",
+    "name" : "DailyAssessmentAntibioticFocus"
+  },
+  {
+    "id" : "DailyAssessmentAntibioticIndication",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-assessment-antibiotic-indication",
+    "version" : "7.0",
+    "name" : "DailyAssessmentAntibioticIndication"
+  },
+  {
+    "id" : "DailyMobilization",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-mobilization",
+    "version" : "7.0",
+    "name" : "DailyMobilization"
+  },
+  {
+    "id" : "DailyStopOrdersInvasiveDevices",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-stop-orders-invasive-devices",
+    "version" : "7.0",
+    "name" : "DailyStopOrdersInvasiveDevices"
+  },
+  {
+    "id" : "DailySufficientFeeding",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-sufficient-feeding",
+    "version" : "7.0",
+    "name" : "DailySufficientFeeding"
+  },
+  {
+    "id" : "DailyTreatmentGoals",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-treatment-goals",
+    "version" : "7.0",
+    "name" : "DailyTreatmentGoals"
+  },
+  {
+    "id" : "DailyMultiprofessionalWardRoundsAction",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-ward-rounds",
+    "version" : "7.0",
+    "name" : "DailyMultiprofessionalWardRoundsAction"
+  },
+  {
+    "id" : "DailyWeaningAssessments",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-weaning-assessments",
+    "version" : "7.0",
+    "name" : "DailyWeaningAssessments"
+  },
+  {
+    "id" : "DailyWeaningTrials",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-weaning-trials",
+    "version" : "7.0",
+    "name" : "DailyWeaningTrials"
+  },
+  {
+    "id" : "DeliriumAssessmentEarlyShift",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/delirium-assessment-early-shift",
+    "version" : "7.0",
+    "name" : "DeliriumAssessmentEarlyShift"
+  },
+  {
+    "id" : "DeliriumAssessmentLateShift",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/delirium-assessment-late-shift",
+    "version" : "7.0",
+    "name" : "DeliriumAssessmentLateShift"
+  },
+  {
+    "id" : "DeliriumAssessmentNightShift",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/delirium-assessment-night-shift",
+    "version" : "7.0",
+    "name" : "DeliriumAssessmentNightShift"
+  },
+  {
+    "id" : "FirstCommunicationPatientsRelativesWithin72hours",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/first-communication-patients-relatives-within-24hours",
+    "version" : "7.0",
+    "name" : "FirstCommunicationPatientsRelativesWithin72hours"
+  },
+  {
+    "id" : "FirstEnteralFeedingWithin24hours",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/first-enteral-feeding-within-24hours",
+    "version" : "7.0",
+    "name" : "FirstEnteralFeedingWithin24hours"
+  },
+  {
+    "id" : "FirstMobilizationWithin24hours",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/first-mobilization-within-24hours",
+    "version" : "7.0",
+    "name" : "FirstMobilizationWithin24hours"
+  },
+  {
+    "id" : "FrequentBloodCultures",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/frequent-blood-cultures",
+    "version" : "7.0",
+    "name" : "FrequentBloodCultures"
+  },
+  {
+    "id" : "NoDischargeWithHomeVentilation",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/no-discharge-with-home-ventilation",
+    "version" : "7.0",
+    "name" : "NoDischargeWithHomeVentilation"
+  },
+  {
+    "id" : "PainAssessmentEarlyShift",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/pain-assessment-early-shift",
+    "version" : "7.0",
+    "name" : "PainAssessmentEarlyShift"
+  },
+  {
+    "id" : "PainAssessmentLateShift",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/pain-assessment-late-shift",
+    "version" : "7.0",
+    "name" : "PainAssessmentLateShift"
+  },
+  {
+    "id" : "PainAssessmentNightShift",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/pain-assessment-night-shift",
+    "version" : "7.0",
+    "name" : "PainAssessmentNightShift"
+  },
+  {
+    "id" : "SedationAssessmentEarlyShift",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/sedation-assessment-early-shift",
+    "version" : "7.0",
+    "name" : "SedationAssessmentEarlyShift"
+  },
+  {
+    "id" : "SedationAssessmentLateShift",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/sedation-assessment-late-shift",
+    "version" : "7.0",
+    "name" : "SedationAssessmentLateShift"
+  },
+  {
+    "id" : "SedationAssessmentNightShift",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/sedation-assessment-night-shift",
+    "version" : "7.0",
+    "name" : "SedationAssessmentNightShift"
+  },
+  {
+    "id" : "WeeklyCommunicationPatientsRelatives",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/weekly-communication-patients-relatives",
+    "version" : "7.0",
+    "name" : "WeeklyCommunicationPatientsRelatives"
+  },
+  {
+    "id" : "template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de",
+    "type" : "ImplementationGuide",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ImplementationGuide/template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de",
+    "version" : "0.0.1-snapshot",
+    "name" : "CPGonEBMonFHIRtemplate"
+  }
+]

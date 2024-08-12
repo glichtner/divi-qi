@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/FirstCommunicationPatientsRelativesWithin72hours> a fhir:ActivityDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FirstCommunicationPatientsRelativesWithin72hours"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition FirstCommunicationPatientsRelativesWithin72hours</b></p><a name=\"FirstCommunicationPatientsRelativesWithin72hours\"> </a><a name=\"hcFirstCommunicationPatientsRelativesWithin72hours\"> </a><a name=\"FirstCommunicationPatientsRelativesWithin72hours-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-FirstCommunicationPatientsRelativesWithin72hours.html\">ActivityDefinition First Communication with Patients and/or their Relatives within 72 hours</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: FirstCommunicationPatientsRelativesWithin72hours</p><p><b>title</b>: First Communication with Patients and/or their Relatives within 72 hours</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>An initial structured communication with the Patients and/or their Relatives occurs within 72 hours of Admission to Intensive Care.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 225330006}\">Client Participation</span></p><p><b>timing</b>: Once per7 days</p></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/first-communication-patients-relatives-within-24hours"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "7.0"] ; # 
+  fhir:name [ fhir:v "FirstCommunicationPatientsRelativesWithin72hours"] ; # 
+  fhir:title [ fhir:v "First Communication with Patients and/or their Relatives within 72 hours"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-12T09:30:16+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NUM CODEX+ CELIDA"] ; # 
+  fhir:description [ fhir:v "An initial structured communication with the Patients and/or their Relatives occurs within 72 hours of Admission to Intensive Care."] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:225330006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "225330006" ] ;
+       fhir:display [ fhir:v "Client Participation" ]
+     ] )
+  ] ; # 
+  fhir:timing [
+     a fhir:Timing ;
+     fhir:repeat [
+       fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+       fhir:period [ fhir:v "7"^^xsd:decimal ] ;
+       fhir:periodUnit [ fhir:v "d" ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

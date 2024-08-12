@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "FrequentBloodCultures",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition FrequentBloodCultures</b></p><a name=\"FrequentBloodCultures\"> </a><a name=\"hcFrequentBloodCultures\"> </a><a name=\"FrequentBloodCultures-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-FrequentBloodCultures.html\">ActivityDefinition Frequent Blood Cultures</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: FrequentBloodCultures</p><p><b>title</b>: Frequent Blood Cultures</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>The Frequency of Blood Cultures is at least 80 per 1000 days.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 30088009}\">Blood Culture</span></p><p><b>timing</b>: 80 per1000 days</p></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/frequent-blood-cultures",
+  "version" : "7.0",
+  "name" : "FrequentBloodCultures",
+  "title" : "Frequent Blood Cultures",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-08-12T09:30:16+00:00",
+  "publisher" : "NUM CODEX+ CELIDA",
+  "description" : "The Frequency of Blood Cultures is at least 80 per 1000 days.",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "30088009",
+      "display" : "Blood Culture"
+    }]
+  },
+  "timingTiming" : {
+    "repeat" : {
+      "frequency" : 80,
+      "period" : 1000,
+      "periodUnit" : "d"
+    }
+  }
+}

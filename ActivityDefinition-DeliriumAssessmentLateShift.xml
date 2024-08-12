@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="DeliriumAssessmentLateShift"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActivityDefinition DeliriumAssessmentLateShift</b></p><a name="DeliriumAssessmentLateShift"> </a><a name="hcDeliriumAssessmentLateShift"> </a><a name="DeliriumAssessmentLateShift-en-US"> </a><p><b>url</b>: <a href="ActivityDefinition-DeliriumAssessmentLateShift.html">ActivityDefinition Delirium Assessment during Late Shift</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: DeliriumAssessmentLateShift</p><p><b>title</b>: Delirium Assessment during Late Shift</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>Delirium should be assessed once between 2 AM and &lt;10 PM every day.</p>
+</div><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 733870009}">Assessment of Delirium</span></p><p><b>timing</b>: Once per1 days</p></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/delirium-assessment-late-shift"/>
+  <version value="7.0"/>
+  <name value="DeliriumAssessmentLateShift"/>
+  <title value="Delirium Assessment during Late Shift"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-08-12T09:30:16+00:00"/>
+  <publisher value="NUM CODEX+ CELIDA"/>
+  <description value="Delirium should be assessed once between 2 AM and &lt;10 PM every day."/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="733870009"/>
+      <display value="Assessment of Delirium"/>
+    </coding>
+  </code>
+  <timingTiming>
+    <repeat>
+      <frequency value="1"/>
+      <period value="1"/>
+      <periodUnit value="d"/>
+    </repeat>
+  </timingTiming>
+</ActivityDefinition>

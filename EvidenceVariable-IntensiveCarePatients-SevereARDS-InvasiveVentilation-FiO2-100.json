@@ -1,0 +1,126 @@
+{
+  "resourceType" : "EvidenceVariable",
+  "id" : "IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-100",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-100</b></p><a name=\"IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-100\"> </a><a name=\"hcIntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-100\"> </a><a name=\"IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-100-en-US\"> </a><p><b>url</b>: <a href=\"EvidenceVariable-IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-100.html\">EvidenceVariable Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=1.00</a></p><p><b>name</b>: Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2_100</p><p><b>title</b>: Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=1.00</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>description</b>: </p><div><p>Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=1.00</p>\n</div><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 71388002}\">Procedure (procedure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 133903000}\">Care of Intensive Care Unit Patient</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 71388002}\">Procedure (procedure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 1258985005}\">Invasive mechanical ventilation</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 67782005}\">Acute Respiratory Distress Syndrome</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 50984-4}\">Horowitz Index in Arterial Blood</span></td><td>0-99.999999999 mm[Hg]</td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 3150-0}\">Inhaled oxygen concentration</span></td><td>100-100 %</td></tr></table></blockquote></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_severe-ards_invasive-ventilation_FiO2-100",
+  "name" : "Population_IntensiveCarePatients_SevereARDS_InvasiveVentilation_FiO2_100",
+  "title" : "Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=1.00",
+  "status" : "active",
+  "date" : "2024-08-12T09:30:16+00:00",
+  "description" : "Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=1.00",
+  "characteristic" : [{
+    "exclude" : false,
+    "definitionByTypeAndValue" : {
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "71388002",
+          "display" : "Procedure (procedure)"
+        }]
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "133903000",
+          "display" : "Care of Intensive Care Unit Patient"
+        }]
+      }
+    }
+  },
+  {
+    "exclude" : false,
+    "definitionByTypeAndValue" : {
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "71388002",
+          "display" : "Procedure (procedure)"
+        }]
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "1258985005",
+          "display" : "Invasive mechanical ventilation"
+        }]
+      }
+    }
+  },
+  {
+    "exclude" : false,
+    "definitionByTypeAndValue" : {
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "404684003",
+          "display" : "Clinical finding (finding)"
+        }]
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "67782005",
+          "display" : "Acute Respiratory Distress Syndrome"
+        }]
+      }
+    }
+  },
+  {
+    "exclude" : false,
+    "definitionByTypeAndValue" : {
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "50984-4",
+          "display" : "Horowitz Index in Arterial Blood"
+        }]
+      },
+      "valueRange" : {
+        "low" : {
+          "value" : 0,
+          "unit" : "mm[Hg]",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        },
+        "high" : {
+          "value" : 99.999999999,
+          "unit" : "mm[Hg]",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        }
+      }
+    }
+  },
+  {
+    "exclude" : false,
+    "definitionByTypeAndValue" : {
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "3150-0",
+          "display" : "Inhaled oxygen concentration"
+        }]
+      },
+      "valueRange" : {
+        "low" : {
+          "value" : 100,
+          "unit" : "%",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        },
+        "high" : {
+          "value" : 100,
+          "unit" : "%",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "%"
+        }
+      }
+    }
+  }]
+}

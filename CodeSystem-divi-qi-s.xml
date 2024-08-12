@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="divi-qi-s"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem divi-qi-s</b></p><a name="divi-qi-s"> </a><a name="hcdivi-qi-s"> </a><a name="divi-qi-s-en-US"> </a><p>This  code system <code>http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">VISITE-FA-ZB-ITS<a name="divi-qi-s-VISITE-FA-ZB-ITS"> </a></td><td>Multidisciplinary ward round led by an intensive care specialist</td></tr><tr><td style="white-space:nowrap">TAGESZIEL<a name="divi-qi-s-TAGESZIEL"> </a></td><td>Setting daily treatment goals</td></tr><tr><td style="white-space:nowrap">BPS<a name="divi-qi-s-BPS"> </a></td><td>Behavioral Pain Scale</td></tr><tr><td style="white-space:nowrap">CAM-ICU<a name="divi-qi-s-CAM-ICU"> </a></td><td>CAM-ICU</td></tr><tr><td style="white-space:nowrap">ICDSC<a name="divi-qi-s-ICDSC"> </a></td><td>ICDSC</td></tr><tr><td style="white-space:nowrap">EVAL-VENT-WEAN<a name="divi-qi-s-EVAL-VENT-WEAN"> </a></td><td>Assessment of Readiness-to-wean from mechanical ventilation</td></tr><tr><td style="white-space:nowrap">ORDER-NO-MOBIL<a name="divi-qi-s-ORDER-NO-MOBIL"> </a></td><td>Order to not mobilize</td></tr></table></div>
+  </text>
+  <url value="http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik"/>
+  <name value="DIVI_QI_S"/>
+  <title value="DIVI Sektion Qualitätsverbesserung und Informationstechnologie Qualitätsindikatoren Semantik"/>
+  <status value="draft"/>
+  <date value="2024-08-12T09:30:16+00:00"/>
+  <description value="DIVI Sektion Qualitätsverbesserung und Informationstechnologie Qualitätsindikatoren Semantik"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="VISITE-FA-ZB-ITS"/>
+    <display value="Multidisciplinary ward round led by an intensive care specialist"/>
+  </concept>
+  <concept>
+    <code value="TAGESZIEL"/>
+    <display value="Setting daily treatment goals"/>
+  </concept>
+  <concept>
+    <code value="BPS"/>
+    <display value="Behavioral Pain Scale"/>
+  </concept>
+  <concept>
+    <code value="CAM-ICU"/>
+    <display value="CAM-ICU"/>
+  </concept>
+  <concept>
+    <code value="ICDSC"/>
+    <display value="ICDSC"/>
+  </concept>
+  <concept>
+    <code value="EVAL-VENT-WEAN"/>
+    <display value="Assessment of Readiness-to-wean from mechanical ventilation"/>
+  </concept>
+  <concept>
+    <code value="ORDER-NO-MOBIL"/>
+    <display value="Order to not mobilize"/>
+  </concept>
+</CodeSystem>

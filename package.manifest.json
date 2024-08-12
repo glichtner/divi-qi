@@ -1,0 +1,6 @@
+{
+  "version" : "0.0.1-snapshot",
+  "fhirVersion" : ["5.0.0"],
+  "date" : "20240812092953",
+  "name" : "template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de"
+}

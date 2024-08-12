@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "WeeklyCommunicationPatientsRelatives",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition WeeklyCommunicationPatientsRelatives</b></p><a name=\"WeeklyCommunicationPatientsRelatives\"> </a><a name=\"hcWeeklyCommunicationPatientsRelatives\"> </a><a name=\"WeeklyCommunicationPatientsRelatives-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-WeeklyCommunicationPatientsRelatives.html\">ActivityDefinition Weekly Communication with Patients and Relatives</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: WeeklyCommunicationPatientsRelatives</p><p><b>title</b>: Weekly Communication with Patients and Relatives</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>At least one structured communication with the Patients and/or their Relatives takes place every week.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 225330006}\">Client Participation</span></p><p><b>timing</b>: Once per7 days</p></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/weekly-communication-patients-relatives",
+  "version" : "7.0",
+  "name" : "WeeklyCommunicationPatientsRelatives",
+  "title" : "Weekly Communication with Patients and Relatives",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-08-12T09:30:16+00:00",
+  "publisher" : "NUM CODEX+ CELIDA",
+  "description" : "At least one structured communication with the Patients and/or their Relatives takes place every week.",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "225330006",
+      "display" : "Client Participation"
+    }]
+  },
+  "timingTiming" : {
+    "repeat" : {
+      "frequency" : 1,
+      "period" : 7,
+      "periodUnit" : "d"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "DailyStopOrdersInvasiveDevices",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition DailyStopOrdersInvasiveDevices</b></p><a name=\"DailyStopOrdersInvasiveDevices\"> </a><a name=\"hcDailyStopOrdersInvasiveDevices\"> </a><a name=\"DailyStopOrdersInvasiveDevices-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-DailyStopOrdersInvasiveDevices.html\">ActivityDefinition Daily Stop-Orders for Invasive Devices</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: DailyStopOrdersInvasiveDevices</p><p><b>title</b>: Daily Stop-Orders for Invasive Devices</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>All invasive devices have a daily re-evaluation regarding the necessity of each device.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 230165009}\">Indication of</span></p><p><b>timing</b>: Once per1 days</p></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-stop-orders-invasive-devices",
+  "version" : "7.0",
+  "name" : "DailyStopOrdersInvasiveDevices",
+  "title" : "Daily Stop-Orders for Invasive Devices",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-08-12T09:30:16+00:00",
+  "publisher" : "NUM CODEX+ CELIDA",
+  "description" : "All invasive devices have a daily re-evaluation regarding the necessity of each device.",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "230165009",
+      "display" : "Indication of"
+    }]
+  },
+  "timingTiming" : {
+    "repeat" : {
+      "frequency" : 1,
+      "period" : 1,
+      "periodUnit" : "d"
+    }
+  }
+}

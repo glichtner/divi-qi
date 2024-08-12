@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="DIVIQualityIndicator1"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PlanDefinition DIVIQualityIndicator1</b></p><a name="DIVIQualityIndicator1"> </a><a name="hcDIVIQualityIndicator1"> </a><a name="DIVIQualityIndicator1-en-US"> </a><p><b>url</b>: <a href="PlanDefinition-DIVIQualityIndicator1.html">PlanDefinition DIVI Quality Indicator 1</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: DiVI_QualityIndicator_1</p><p><b>title</b>: DIVI Quality Indicator 1</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type workflow-definition}">Workflow Definition</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-03-29</p><p><b>publisher</b>: Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI)</p><p><b>description</b>: </p><div><p>DIVI Quality Indicator 1: Daily multiprofessional ward rounds with documentation of treatment goals</p>
+</div><blockquote><p><b>action</b></p><p><b>title</b>: DIVI Quality Indicator 1a: Daily multiprofessional ward rounds</p><p><b>description</b>: </p><div><p>Every Intensive Care Patient should be visited daily in multiprofessional ward rounds.</p>
+</div><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based Care</span></p><p><b>definition</b>: <a href="PlanDefinition-DailyMultiprofessionalWardRounds.html">Daily multiprofessional ward rounds</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: DIVI Quality Indicator 1b: Daily documentation of treatment goals</p><p><b>description</b>: </p><div><p>Treatment Goals should be documented daily for every Intensive Care Patient.</p>
+</div><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based Care</span></p><p><b>definition</b>: <a href="PlanDefinition-DailyDocumentationTreatmentGoals.html">Daily Documentation of Treatment Goals</a></p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="all"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-1"/>
+  <version value="1.0"/>
+  <name value="DiVI_QualityIndicator_1"/>
+  <title value="DIVI Quality Indicator 1"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="workflow-definition"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-03-29"/>
+  <publisher value="Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI)"/>
+  <description value="DIVI Quality Indicator 1: Daily multiprofessional ward rounds with documentation of treatment goals"/>
+  <action>
+    <title value="DIVI Quality Indicator 1a: Daily multiprofessional ward rounds"/>
+    <description value="Every Intensive Care Patient should be visited daily in multiprofessional ward rounds."/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/daily-ward-rounds"/>
+  </action>
+  <action>
+    <title value="DIVI Quality Indicator 1b: Daily documentation of treatment goals"/>
+    <description value="Treatment Goals should be documented daily for every Intensive Care Patient."/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/daily-treatment-goals"/>
+  </action>
+</PlanDefinition>

@@ -1,0 +1,281 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/SedationLevelAnalgesiaLevelDeliriumStatusInAcceptableRanges> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SedationLevelAnalgesiaLevelDeliriumStatusInAcceptableRanges"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition SedationLevelAnalgesiaLevelDeliriumStatusInAcceptableRanges</b></p><a name=\"SedationLevelAnalgesiaLevelDeliriumStatusInAcceptableRanges\"> </a><a name=\"hcSedationLevelAnalgesiaLevelDeliriumStatusInAcceptableRanges\"> </a><a name=\"SedationLevelAnalgesiaLevelDeliriumStatusInAcceptableRanges-en-US\"> </a><p><b>url</b>: <a href=\"PlanDefinition-SedationLevelAnalgesiaLevelDeliriumStatusInAcceptableRanges.html\">PlanDefinition Sedation Level, Analgesia Level and Delirium Status in acceptable ranges.</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: Intervention_SedationLevel_AnalgesiaLevel_DeliriumStatus_InAcceptableranges</p><p><b>title</b>: Sedation Level, Analgesia Level and Delirium Status in acceptable ranges.</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}\">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>subject</b>: <a href=\"EvidenceVariable-IntensiveCarePatients.html\">Population: Intensive Care Patients</a></p><p><b>date</b>: 2024-03-29</p><p><b>description</b>: </p><div><p>Sedation Level, Analgesia Level and Delirium Status should be in acceptable ranges.</p>\n</div><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>sedation-rass-inrange-goal</blockquote><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 273249006}\">Assessment scales (assessment scale)</span></p><p><b>description</b>: <span title=\"Codes:\">Sedation Level should be within RASS scores of -1 to +1</span></p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 457441000124102}\">Richmond agitation-sedation scale</span></td><td>-1-1</td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>analgesia-nrs-inrange-goal</blockquote><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 273249006}\">Assessment scales (assessment scale)</span></p><p><b>description</b>: <span title=\"Codes:\">Analgesia Level should be within NRS scores of 0 to 3</span></p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 1284852002}\">Numeric Pain Rating Scale</span></td><td>0-3</td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>analgesia-vas-inrange-goal</blockquote><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 273249006}\">Assessment scales (assessment scale)</span></p><p><b>description</b>: <span title=\"Codes:\">Analgesia Level should be within VAS scores of 0 to 3</span></p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 273904000}\">Visual analog pain scale</span></td><td>0-3</td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>analgesia-bps-inrange-goal</blockquote><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 273249006}\">Assessment scales (assessment scale)</span></p><p><b>description</b>: <span title=\"Codes:\">Analgesia Level should be within BPS scores of 0 to 3</span></p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik BPS}\">Behavioral Pain Scale</span></td><td>0-3</td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>delirium-camicu-inrange-goal</blockquote><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 273249006}\">Assessment scales (assessment scale)</span></p><p><b>description</b>: <span title=\"Codes:\">Delirium Status should be within CAM-ICU scores of 0 (No Delirium)</span></p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik CAM-ICU}\">CAM-ICU</span></td><td>0-0</td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>delirium-icdsc-inrange-goal</blockquote><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 273249006}\">Assessment scales (assessment scale)</span></p><p><b>description</b>: <span title=\"Codes:\">Delirium Status should be within ICDSC scores of 0 (No Delirium)</span></p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik ICDSC}\">ICDSC</span></td><td>0-0</td></tr></table></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 386053000}\">Evaluation procedure (procedure)</span></p><p><b>goalId</b>: sedation-rass-inrange-goal, analgesia-nrs-inrange-goal, analgesia-vas-inrange-goal, analgesia-bps-inrange-goal, delirium-camicu-inrange-goal, delirium-icdsc-inrange-goal</p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf"^^xsd:anyURI ] ;
+     fhir:value [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-2"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-2>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "method"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "all" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/Sedation-Level_Analgesia-Level_Delirium-Status_In-Acceptable-Ranges"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0"] ; # 
+  fhir:name [ fhir:v "Intervention_SedationLevel_AnalgesiaLevel_DeliriumStatus_InAcceptableranges"] ; # 
+  fhir:title [ fhir:v "Sedation Level, Analgesia Level and Delirium Status in acceptable ranges."] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "eca-rule" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:subject [
+     fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients"^^xsd:anyURI ;
+     fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients>
+  ] ; # 
+  fhir:date [ fhir:v "2024-03-29"^^xsd:date] ; # 
+  fhir:description [ fhir:v "Sedation Level, Analgesia Level and Delirium Status should be in acceptable ranges."] ; # 
+  fhir:goal ( [
+     fhir:id [ fhir:v "sedation-rass-inrange-goal" ] ;
+     fhir:category [
+       fhir:coding ( [
+         a sct:273249006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "273249006" ] ;
+         fhir:display [ fhir:v "Assessment scales (assessment scale)" ]
+       ] )
+     ] ;
+     fhir:description [
+       fhir:text [ fhir:v "Sedation Level should be within RASS scores of -1 to +1" ]
+     ] ;
+     fhir:target ( [
+       fhir:measure [
+         fhir:coding ( [
+           a sct:457441000124102 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:version [ fhir:v "http://snomed.info/sct/731000124108/version/20230901" ] ;
+           fhir:code [ fhir:v "457441000124102" ] ;
+           fhir:display [ fhir:v "Richmond agitation-sedation scale" ]
+         ] )
+       ] ;
+       fhir:detail [
+         a fhir:Range ;
+         fhir:low [
+           fhir:value [ fhir:v "-1"^^xsd:decimal ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ] ;
+         fhir:high [
+           fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ]
+     ] )
+  ] [
+     fhir:id [ fhir:v "analgesia-nrs-inrange-goal" ] ;
+     fhir:category [
+       fhir:coding ( [
+         a sct:273249006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "273249006" ] ;
+         fhir:display [ fhir:v "Assessment scales (assessment scale)" ]
+       ] )
+     ] ;
+     fhir:description [
+       fhir:text [ fhir:v "Analgesia Level should be within NRS scores of 0 to 3" ]
+     ] ;
+     fhir:target ( [
+       fhir:measure [
+         fhir:coding ( [
+           a sct:1284852002 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20240201" ] ;
+           fhir:code [ fhir:v "1284852002" ] ;
+           fhir:display [ fhir:v "Numeric Pain Rating Scale" ]
+         ] )
+       ] ;
+       fhir:detail [
+         a fhir:Range ;
+         fhir:low [
+           fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ] ;
+         fhir:high [
+           fhir:value [ fhir:v "3"^^xsd:decimal ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ]
+     ] )
+  ] [
+     fhir:id [ fhir:v "analgesia-vas-inrange-goal" ] ;
+     fhir:category [
+       fhir:coding ( [
+         a sct:273249006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "273249006" ] ;
+         fhir:display [ fhir:v "Assessment scales (assessment scale)" ]
+       ] )
+     ] ;
+     fhir:description [
+       fhir:text [ fhir:v "Analgesia Level should be within VAS scores of 0 to 3" ]
+     ] ;
+     fhir:target ( [
+       fhir:measure [
+         fhir:coding ( [
+           a sct:273904000 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "273904000" ] ;
+           fhir:display [ fhir:v "Visual analog pain scale" ]
+         ] )
+       ] ;
+       fhir:detail [
+         a fhir:Range ;
+         fhir:low [
+           fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ] ;
+         fhir:high [
+           fhir:value [ fhir:v "3"^^xsd:decimal ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ]
+     ] )
+  ] [
+     fhir:id [ fhir:v "analgesia-bps-inrange-goal" ] ;
+     fhir:category [
+       fhir:coding ( [
+         a sct:273249006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "273249006" ] ;
+         fhir:display [ fhir:v "Assessment scales (assessment scale)" ]
+       ] )
+     ] ;
+     fhir:description [
+       fhir:text [ fhir:v "Analgesia Level should be within BPS scores of 0 to 3" ]
+     ] ;
+     fhir:target ( [
+       fhir:measure [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "BPS" ] ;
+           fhir:display [ fhir:v "Behavioral Pain Scale" ]
+         ] )
+       ] ;
+       fhir:detail [
+         a fhir:Range ;
+         fhir:low [
+           fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ] ;
+         fhir:high [
+           fhir:value [ fhir:v "3"^^xsd:decimal ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ]
+     ] )
+  ] [
+     fhir:id [ fhir:v "delirium-camicu-inrange-goal" ] ;
+     fhir:category [
+       fhir:coding ( [
+         a sct:273249006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "273249006" ] ;
+         fhir:display [ fhir:v "Assessment scales (assessment scale)" ]
+       ] )
+     ] ;
+     fhir:description [
+       fhir:text [ fhir:v "Delirium Status should be within CAM-ICU scores of 0 (No Delirium)" ]
+     ] ;
+     fhir:target ( [
+       fhir:measure [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "CAM-ICU" ] ;
+           fhir:display [ fhir:v "CAM-ICU" ]
+         ] )
+       ] ;
+       fhir:detail [
+         a fhir:Range ;
+         fhir:low [
+           fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ] ;
+         fhir:high [
+           fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ]
+     ] )
+  ] [
+     fhir:id [ fhir:v "delirium-icdsc-inrange-goal" ] ;
+     fhir:category [
+       fhir:coding ( [
+         a sct:273249006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "273249006" ] ;
+         fhir:display [ fhir:v "Assessment scales (assessment scale)" ]
+       ] )
+     ] ;
+     fhir:description [
+       fhir:text [ fhir:v "Delirium Status should be within ICDSC scores of 0 (No Delirium)" ]
+     ] ;
+     fhir:target ( [
+       fhir:measure [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ICDSC" ] ;
+           fhir:display [ fhir:v "ICDSC" ]
+         ] )
+       ] ;
+       fhir:detail [
+         a fhir:Range ;
+         fhir:low [
+           fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ] ;
+         fhir:high [
+           fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:action ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:goalId ( [ fhir:v "sedation-rass-inrange-goal" ] [ fhir:v "analgesia-nrs-inrange-goal" ] [ fhir:v "analgesia-vas-inrange-goal" ] [ fhir:v "analgesia-bps-inrange-goal" ] [ fhir:v "delirium-camicu-inrange-goal" ] [ fhir:v "delirium-icdsc-inrange-goal" ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

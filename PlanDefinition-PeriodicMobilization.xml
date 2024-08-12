@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="PeriodicMobilization"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PlanDefinition PeriodicMobilization</b></p><a name="PeriodicMobilization"> </a><a name="hcPeriodicMobilization"> </a><a name="PeriodicMobilization-en-US"> </a><p><b>url</b>: <a href="PlanDefinition-PeriodicMobilization.html">PlanDefinition Periodic Mobilization</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: Intervention_PeriodicMobilization</p><p><b>title</b>: Periodic Mobilization</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>subject</b>: <a href="EvidenceVariable-IntensiveCarePatients-WithOut-NoMobilizationOrder.html">Population: Intensive Care Patients without a no-mobilization order</a></p><p><b>date</b>: 2024-03-29</p><p><b>description</b>: </p><div><p>All Intensive Care Patients that don't have a no-mobilization order should be mobilized at least once every day.</p>
+</div><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Definition[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 74964007}">Other (qualifier value)</span></td><td><a href="ActivityDefinition-DailyMobilization.html">Daily Mobilization</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf">
+    <valueCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-9"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="all"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/periodic-mobilization"/>
+  <version value="1.0"/>
+  <name value="Intervention_PeriodicMobilization"/>
+  <title value="Periodic Mobilization"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <subjectCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_without_no-mobilization-order"/>
+  <date value="2024-03-29"/>
+  <description value="All Intensive Care Patients that don't have a no-mobilization order should be mobilized at least once every day."/>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="74964007"/>
+        <display value="Other (qualifier value)"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-mobilization"/>
+  </action>
+</PlanDefinition>

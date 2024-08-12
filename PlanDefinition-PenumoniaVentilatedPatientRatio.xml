@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="PenumoniaVentilatedPatientRatio"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PlanDefinition PenumoniaVentilatedPatientRatio</b></p><a name="PenumoniaVentilatedPatientRatio"> </a><a name="hcPenumoniaVentilatedPatientRatio"> </a><a name="PenumoniaVentilatedPatientRatio-en-US"> </a><p><b>url</b>: <a href="PlanDefinition-PenumoniaVentilatedPatientRatio.html">PlanDefinition Pneumonia-per-Ventilated-Patients Ratio</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: Intervention_Pneumonia_VentilatedPatients_Ratio</p><p><b>title</b>: Pneumonia-per-Ventilated-Patients Ratio</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>subject</b>: <a href="EvidenceVariable-IntensiveCarePatients-InvasiveVentilation.html">Population: Intensive Care Patients with Invasive Ventilation</a></p><p><b>date</b>: 2024-03-29</p><p><b>description</b>: </p><div><p>The number of pneumonia cases per ventilated patients should be low.</p>
+</div><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>assessment-pneumonia-ventilated-patients-ratio</blockquote><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 74964007}">Other (qualifier value)</span></p><p><b>description</b>: <span title="Codes:">The number of pneumonia cases per ventilated patients is at zero.</span></p><blockquote><p><b>target</b></p><p><b>measure</b>: <span title="Codes:{http://snomed.info/sct 429271009}">Ventilator associated pneumonia</span></p><p><b>detail</b>: 0-?</p><h3>Dues</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td><td><b>Unit</b></td><td><b>System</b></td><td><b>Code</b></td></tr><tr><td style="display: none">*</td><td>1</td><td>day</td><td><a href="http://terminology.hl7.org/5.1.0/CodeSystem-v3-ucum.html">http://unitsofmeasure.org</a></td><td>d</td></tr></table></blockquote></blockquote><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>GoalId</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 386053000}">Evaluation procedure (procedure)</span></td><td>assessment-pneumonia-ventilated-patients-ratio</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf">
+    <valueCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-5"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="all"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/pneumonia-ventilated-patients-ratio"/>
+  <version value="1.0"/>
+  <name value="Intervention_Pneumonia_VentilatedPatients_Ratio"/>
+  <title value="Pneumonia-per-Ventilated-Patients Ratio"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <subjectCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_invasive-ventilation"/>
+  <date value="2024-03-29"/>
+  <description value="The number of pneumonia cases per ventilated patients should be low."/>
+  <goal id="assessment-pneumonia-ventilated-patients-ratio">
+    <category>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="74964007"/>
+        <display value="Other (qualifier value)"/>
+      </coding>
+    </category>
+    <description>
+      <text value="The number of pneumonia cases per ventilated patients is at zero."/>
+    </description>
+    <target>
+      <measure>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="429271009"/>
+          <display value="Ventilator associated pneumonia"/>
+        </coding>
+      </measure>
+      <detailRange>
+        <low>
+          <value value="0"/>
+          <system value="http://unitsofmeasure.org"/>
+        </low>
+      </detailRange>
+      <due>
+        <value value="1"/>
+        <unit value="day"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+      </due>
+    </target>
+  </goal>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <goalId value="assessment-pneumonia-ventilated-patients-ratio"/>
+  </action>
+</PlanDefinition>

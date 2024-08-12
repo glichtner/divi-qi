@@ -1,0 +1,68 @@
+{
+  "resourceType" : "PlanDefinition",
+  "id" : "DIVIQualityIndicator2",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition DIVIQualityIndicator2</b></p><a name=\"DIVIQualityIndicator2\"> </a><a name=\"hcDIVIQualityIndicator2\"> </a><a name=\"DIVIQualityIndicator2-en-US\"> </a><p><b>url</b>: <a href=\"PlanDefinition-DIVIQualityIndicator2.html\">PlanDefinition DIVI Quality Indicator 2</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: DiVI_QualityIndicator_2</p><p><b>title</b>: DIVI Quality Indicator 2</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type workflow-definition}\">Workflow Definition</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-03-29</p><p><b>publisher</b>: Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI)</p><p><b>description</b>: </p><div><p>DIVI Quality Indicator 2: Management of Sedation, Analgesia and Delirium</p>\n</div><blockquote><p><b>action</b></p><p><b>title</b>: DIVI Quality Indicator 2a: Periodic Assessment of Sedation, Analgesia and Delirium in all Intensive Care Patients</p><p><b>description</b>: </p><div><p>Sedation Level, Analgesia Level and Delirium Status should be assessed at least once in each shift (time-slots 6-14, 14-22, 22-6) in all Intensive Care Patients.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-PeriodicAssessmentOfSedationAnalgesiaDelirium.html\">Periodic Assessment of Sedation Level, Analgesia Level and Delirium Status</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: DIVI Quality Indicator 2b: Sedation Level, Analgesia Level, Delirium Status</p><p><b>description</b>: </p><div><p>Sedation Level, Analgesia Level and Delirium Status should be in acceptable ranges in all Intensive Care Patients.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-SedationLevelAnalgesiaLevelDeliriumStatusInAcceptableRanges.html\">Sedation Level, Analgesia Level and Delirium Status in acceptable ranges.</a></p></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  },
+  {
+    "extension" : [{
+      "url" : "method",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method",
+          "code" : "all"
+        }]
+      }
+    }],
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-2",
+  "version" : "1.0",
+  "name" : "DiVI_QualityIndicator_2",
+  "title" : "DIVI Quality Indicator 2",
+  "type" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+      "code" : "workflow-definition"
+    }]
+  },
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-03-29",
+  "publisher" : "Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI)",
+  "description" : "DIVI Quality Indicator 2: Management of Sedation, Analgesia and Delirium",
+  "action" : [{
+    "title" : "DIVI Quality Indicator 2a: Periodic Assessment of Sedation, Analgesia and Delirium in all Intensive Care Patients",
+    "description" : "Sedation Level, Analgesia Level and Delirium Status should be assessed at least once in each shift (time-slots 6-14, 14-22, 22-6) in all Intensive Care Patients.",
+    "code" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+        "code" : "guideline-based-care"
+      }]
+    },
+    "definitionCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/periodic-assessment_sedation_analgesia_delirium"
+  },
+  {
+    "title" : "DIVI Quality Indicator 2b: Sedation Level, Analgesia Level, Delirium Status",
+    "description" : "Sedation Level, Analgesia Level and Delirium Status should be in acceptable ranges in all Intensive Care Patients.",
+    "code" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+        "code" : "guideline-based-care"
+      }]
+    },
+    "definitionCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/Sedation-Level_Analgesia-Level_Delirium-Status_In-Acceptable-Ranges"
+  }]
+}

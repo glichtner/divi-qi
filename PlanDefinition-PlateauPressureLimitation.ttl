@@ -1,0 +1,111 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/PlanDefinition/PlateauPressureLimitation> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PlateauPressureLimitation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition PlateauPressureLimitation</b></p><a name=\"PlateauPressureLimitation\"> </a><a name=\"hcPlateauPressureLimitation\"> </a><a name=\"PlateauPressureLimitation-en-US\"> </a><p><b>url</b>: <a href=\"PlanDefinition-PlateauPressureLimitation.html\">PlanDefinition Plateau Pressure Limitation</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: Intervention_PlateauPressure_Limitation</p><p><b>title</b>: Plateau Pressure Limitation</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}\">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>subject</b>: <a href=\"EvidenceVariable-IntensiveCarePatients-SevereARDS-InvasiveVentilation.html\">Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation</a></p><p><b>date</b>: 2024-03-29</p><p><b>description</b>: </p><div><p>Plateau Pressure should be limited to a maximum of 30 cmH2O in all invasive ventilated ICU patients with severe ARDS.</p>\n</div><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>plateau-pressure-goal</blockquote><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 385857005}\">Ventilator care and adjustment (regime/therapy)</span></p><p><b>description</b>: <span title=\"Codes:\">Plateau pressure should be limited to a maximum of 30 cmH2O.</span></p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 76259-1}\">Pressure.plateau Respiratory system airway --on ventilator</span></td><td>?-30</td></tr></table></blockquote><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>GoalId</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 410210009}\">Ventilator care management (procedure)</span></td><td>plateau-pressure-goal</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf"^^xsd:anyURI ] ;
+     fhir:value [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-3"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-3>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "method"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "all" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/plateau-pressure_limitation"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0"] ; # 
+  fhir:name [ fhir:v "Intervention_PlateauPressure_Limitation"] ; # 
+  fhir:title [ fhir:v "Plateau Pressure Limitation"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "eca-rule" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:subject [
+     fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_severe-ards_invasive-ventilation"^^xsd:anyURI ;
+     fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_severe-ards_invasive-ventilation>
+  ] ; # 
+  fhir:date [ fhir:v "2024-03-29"^^xsd:date] ; # 
+  fhir:description [ fhir:v "Plateau Pressure should be limited to a maximum of 30 cmH2O in all invasive ventilated ICU patients with severe ARDS."] ; # 
+  fhir:goal ( [
+     fhir:id [ fhir:v "plateau-pressure-goal" ] ;
+     fhir:category [
+       fhir:coding ( [
+         a sct:385857005 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "385857005" ] ;
+         fhir:display [ fhir:v "Ventilator care and adjustment (regime/therapy)" ]
+       ] )
+     ] ;
+     fhir:description [
+       fhir:text [ fhir:v "Plateau pressure should be limited to a maximum of 30 cmH2O." ]
+     ] ;
+     fhir:target ( [
+       fhir:measure [
+         fhir:coding ( [
+           a loinc:76259-1 ;
+           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "76259-1" ] ;
+           fhir:display [ fhir:v "Pressure.plateau Respiratory system airway --on ventilator" ]
+         ] )
+       ] ;
+       fhir:detail [
+         a fhir:Range ;
+         fhir:high [
+           fhir:value [ fhir:v "30"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "cm[H2O]" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "cm[H2O]" ]
+         ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:action ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:410210009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "410210009" ] ;
+         fhir:display [ fhir:v "Ventilator care management (procedure)" ]
+       ] )
+     ] ;
+     fhir:goalId ( [ fhir:v "plateau-pressure-goal" ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

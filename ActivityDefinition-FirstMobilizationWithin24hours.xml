@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="FirstMobilizationWithin24hours"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActivityDefinition FirstMobilizationWithin24hours</b></p><a name="FirstMobilizationWithin24hours"> </a><a name="hcFirstMobilizationWithin24hours"> </a><a name="FirstMobilizationWithin24hours-en-US"> </a><p><b>url</b>: <a href="ActivityDefinition-FirstMobilizationWithin24hours.html">ActivityDefinition First Mobilization within 24 hours</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: FirstMobilizationWithin24hours</p><p><b>title</b>: First Mobilization within 24 hours</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>First Mobilization occurs within 24 hours after Admission to Intensive Care.</p>
+</div><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 74923002}">Mobilization</span></p><p><b>timing</b>: Once per1 days</p></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/first-mobilization-within-24hours"/>
+  <version value="7.0"/>
+  <name value="FirstMobilizationWithin24hours"/>
+  <title value="First Mobilization within 24 hours"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-08-12T09:30:16+00:00"/>
+  <publisher value="NUM CODEX+ CELIDA"/>
+  <description value="First Mobilization occurs within 24 hours after Admission to Intensive Care."/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="74923002"/>
+      <display value="Mobilization"/>
+    </coding>
+  </code>
+  <timingTiming>
+    <repeat>
+      <frequency value="1"/>
+      <period value="1"/>
+      <periodUnit value="d"/>
+    </repeat>
+  </timingTiming>
+</ActivityDefinition>

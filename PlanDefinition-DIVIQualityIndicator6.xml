@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="DIVIQualityIndicator6"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PlanDefinition DIVIQualityIndicator6</b></p><a name="DIVIQualityIndicator6"> </a><a name="hcDIVIQualityIndicator6"> </a><a name="DIVIQualityIndicator6-en-US"> </a><p><b>url</b>: <a href="PlanDefinition-DIVIQualityIndicator6.html">PlanDefinition DIVI Quality Indicator 6</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: DiVI_QualityIndicator_6</p><p><b>title</b>: DIVI Quality Indicator 6</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type workflow-definition}">Workflow Definition</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-03-29</p><p><b>publisher</b>: Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI)</p><p><b>description</b>: </p><div><p>DIVI Quality Indicator 6: Infection Management</p>
+</div><blockquote><p><b>action</b></p><p><b>title</b>: DIVI Quality Indicator 6a: Indication, Focus and Duration of Therapy for Antibiotics</p><p><b>description</b>: </p><div><p>All Intensive Care Patients with Antibiotics should have a daily re-evaluation of the Indication, Focus and Duration of Therapy for each Antibiotic.</p>
+</div><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based Care</span></p><p><b>definition</b>: <a href="PlanDefinition-AntibioticsIndicationFocusDuration.html">Indication, Focus and Duration of Therapy for Antibiotics</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: DIVI Quality Indicator 6b: Frequency of Blood Cultures</p><p><b>description</b>: </p><div><p>The Frequency of Blood Cultures should be at least 80 per 1000 days.</p>
+</div><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based Care</span></p><p><b>definition</b>: <a href="PlanDefinition-FrequencyBloodCultures.html">Frequency of Blood Cultures</a></p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="all"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-6"/>
+  <version value="1.0"/>
+  <name value="DiVI_QualityIndicator_6"/>
+  <title value="DIVI Quality Indicator 6"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="workflow-definition"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-03-29"/>
+  <publisher value="Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI)"/>
+  <description value="DIVI Quality Indicator 6: Infection Management"/>
+  <action>
+    <title value="DIVI Quality Indicator 6a: Indication, Focus and Duration of Therapy for Antibiotics"/>
+    <description value="All Intensive Care Patients with Antibiotics should have a daily re-evaluation of the Indication, Focus and Duration of Therapy for each Antibiotic."/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/antibiotics_indication-focus-duration"/>
+  </action>
+  <action>
+    <title value="DIVI Quality Indicator 6b: Frequency of Blood Cultures"/>
+    <description value="The Frequency of Blood Cultures should be at least 80 per 1000 days."/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/blood-cultures_frequency"/>
+  </action>
+</PlanDefinition>

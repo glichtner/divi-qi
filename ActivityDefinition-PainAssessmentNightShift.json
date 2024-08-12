@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "PainAssessmentNightShift",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition PainAssessmentNightShift</b></p><a name=\"PainAssessmentNightShift\"> </a><a name=\"hcPainAssessmentNightShift\"> </a><a name=\"PainAssessmentNightShift-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-PainAssessmentNightShift.html\">ActivityDefinition Pain Assessment during Night Shift</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: PainAssessmentNightShift</p><p><b>title</b>: Pain Assessment during Night Shift</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>Pain should be assessed once between 10 PM and &lt;6 AM every day.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 370778008}\">Assessment of Pain Control</span></p><p><b>timing</b>: Once per1 days</p></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/pain-assessment-night-shift",
+  "version" : "7.0",
+  "name" : "PainAssessmentNightShift",
+  "title" : "Pain Assessment during Night Shift",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-08-12T09:30:16+00:00",
+  "publisher" : "NUM CODEX+ CELIDA",
+  "description" : "Pain should be assessed once between 10 PM and <6 AM every day.",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "370778008",
+      "display" : "Assessment of Pain Control"
+    }]
+  },
+  "timingTiming" : {
+    "repeat" : {
+      "frequency" : 1,
+      "period" : 1,
+      "periodUnit" : "d"
+    }
+  }
+}

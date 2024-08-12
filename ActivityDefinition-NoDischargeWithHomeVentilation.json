@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "NoDischargeWithHomeVentilation",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition NoDischargeWithHomeVentilation</b></p><a name=\"NoDischargeWithHomeVentilation\"> </a><a name=\"hcNoDischargeWithHomeVentilation\"> </a><a name=\"NoDischargeWithHomeVentilation-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-NoDischargeWithHomeVentilation.html\">ActivityDefinition No Discharge with Home Ventilation</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: NoDischargeWithHomeVentilation</p><p><b>title</b>: No Discharge with Home Ventilation</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>The patient is not discharged with home ventilation.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 60631000119109}\">Dependence on home ventilator</span></p><p><b>timing</b>: Once per1 days</p></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/no-discharge-with-home-ventilation",
+  "version" : "7.0",
+  "name" : "NoDischargeWithHomeVentilation",
+  "title" : "No Discharge with Home Ventilation",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-08-12T09:30:16+00:00",
+  "publisher" : "NUM CODEX+ CELIDA",
+  "description" : "The patient is not discharged with home ventilation.",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "60631000119109",
+      "display" : "Dependence on home ventilator"
+    }]
+  },
+  "timingTiming" : {
+    "repeat" : {
+      "frequency" : 1,
+      "period" : 1,
+      "periodUnit" : "d"
+    }
+  }
+}

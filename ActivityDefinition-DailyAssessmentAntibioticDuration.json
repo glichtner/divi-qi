@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "DailyAssessmentAntibioticDuration",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition DailyAssessmentAntibioticDuration</b></p><a name=\"DailyAssessmentAntibioticDuration\"> </a><a name=\"hcDailyAssessmentAntibioticDuration\"> </a><a name=\"DailyAssessmentAntibioticDuration-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-DailyAssessmentAntibioticDuration.html\">ActivityDefinition Daily Assessment of the Duration of Antibiotic Therapy</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: DailyAssessmentAntibioticDuration</p><p><b>title</b>: Daily Assessment of the Duration of Antibiotic Therapy</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>All Antibiotics are daily re-evaluated for the Duration of Therapy for each Antibiotic.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 261773006}\">Duration of Therapy</span></p><p><b>timing</b>: Once per1 days</p></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-assessment-antibiotic-duration",
+  "version" : "7.0",
+  "name" : "DailyAssessmentAntibioticDuration",
+  "title" : "Daily Assessment of the Duration of Antibiotic Therapy",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-08-12T09:30:16+00:00",
+  "publisher" : "NUM CODEX+ CELIDA",
+  "description" : "All Antibiotics are daily re-evaluated for the Duration of Therapy for each Antibiotic.",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "261773006",
+      "display" : "Duration of Therapy"
+    }]
+  },
+  "timingTiming" : {
+    "repeat" : {
+      "frequency" : 1,
+      "period" : 1,
+      "periodUnit" : "d"
+    }
+  }
+}

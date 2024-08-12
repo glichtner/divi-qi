@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="PEEPadjustedToFIO2-80to99"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PlanDefinition PEEPadjustedToFIO2-80to99</b></p><a name="PEEPadjustedToFIO2-80to99"> </a><a name="hcPEEPadjustedToFIO2-80to99"> </a><a name="PEEPadjustedToFIO2-80to99-en-US"> </a><p><b>url</b>: <a href="PlanDefinition-PEEPadjustedToFIO2-80to99.html">PlanDefinition PEEP adjusted to FiO2=0.80-0.99</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: Intervention_PEEP_adjustedTo_FiO2_80to99</p><p><b>title</b>: PEEP adjusted to FiO2=0.80-0.99</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>subject</b>: <a href="EvidenceVariable-IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-80to99.html">Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.80-0.99</a></p><p><b>date</b>: 2024-03-29</p><p><b>description</b>: </p><div><p>PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS.</p>
+</div><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>peep-goal-fiO2-80to99</blockquote><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 385857005}">Ventilator care and adjustment (regime/therapy)</span></p><p><b>description</b>: <span title="Codes:">PEEP should be set to 14-22 cmH2O for FiO2 0.80-0.99.</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://loinc.org 76248-4}">PEEP Respiratory system --on ventilator</span></td><td>14-22 cm[H2O]</td></tr></table></blockquote><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>GoalId</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 410210009}">Ventilator care management (procedure)</span></td><td>peep-goal-fiO2-80to99</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf">
+    <valueCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-3"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="all"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/PEEP_adjustedTo_FiO2-80to99"/>
+  <version value="1.0"/>
+  <name value="Intervention_PEEP_adjustedTo_FiO2_80to99"/>
+  <title value="PEEP adjusted to FiO2=0.80-0.99"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <subjectCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_severe-ards_invasive-ventilation_FiO2-80to99"/>
+  <date value="2024-03-29"/>
+  <description value="PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS."/>
+  <goal id="peep-goal-fiO2-80to99">
+    <category>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="385857005"/>
+        <display value="Ventilator care and adjustment (regime/therapy)"/>
+      </coding>
+    </category>
+    <description>
+      <text value="PEEP should be set to 14-22 cmH2O for FiO2 0.80-0.99."/>
+    </description>
+    <target>
+      <measure>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="76248-4"/>
+          <display value="PEEP Respiratory system --on ventilator"/>
+        </coding>
+      </measure>
+      <detailRange>
+        <low>
+          <value value="14"/>
+          <unit value="cm[H2O]"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="cm[H2O]"/>
+        </low>
+        <high>
+          <value value="22"/>
+          <unit value="cm[H2O]"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="cm[H2O]"/>
+        </high>
+      </detailRange>
+    </target>
+  </goal>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="410210009"/>
+        <display value="Ventilator care management (procedure)"/>
+      </coding>
+    </code>
+    <goalId value="peep-goal-fiO2-80to99"/>
+  </action>
+</PlanDefinition>

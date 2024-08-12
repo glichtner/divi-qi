@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "FirstEnteralFeedingWithin24hours",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition FirstEnteralFeedingWithin24hours</b></p><a name=\"FirstEnteralFeedingWithin24hours\"> </a><a name=\"hcFirstEnteralFeedingWithin24hours\"> </a><a name=\"FirstEnteralFeedingWithin24hours-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-FirstEnteralFeedingWithin24hours.html\">ActivityDefinition First Enteral Feeding Within 24 hours</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: FirstEnteralFeedingWithin24hours</p><p><b>title</b>: First Enteral Feeding Within 24 hours</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>First Enteral Feeding occurs within 24 hours after Admission to Intensive Care.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 229912004}\">Enteral Feeding</span></p><p><b>timing</b>: Once per1 days</p></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/first-enteral-feeding-within-24hours",
+  "version" : "7.0",
+  "name" : "FirstEnteralFeedingWithin24hours",
+  "title" : "First Enteral Feeding Within 24 hours",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-08-12T09:30:16+00:00",
+  "publisher" : "NUM CODEX+ CELIDA",
+  "description" : "First Enteral Feeding occurs within 24 hours after Admission to Intensive Care.",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "229912004",
+      "display" : "Enteral Feeding"
+    }]
+  },
+  "timingTiming" : {
+    "repeat" : {
+      "frequency" : 1,
+      "period" : 1,
+      "periodUnit" : "d"
+    }
+  }
+}

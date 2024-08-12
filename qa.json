@@ -1,0 +1,19 @@
+{
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ImplementationGuide/template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de",
+  "name" : "CPGonEBMonFHIRtemplate",
+  "title" : "CPG-on-EBMonFHIR template",
+  "description" : null,
+  "status" : "draft",
+  "package-id" : "template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de",
+  "ig-ver" : "0.0.1-snapshot",
+  "date" : "Mon, 12 Aug, 2024 09:30:16 +0000",
+  "dateISO8601" : "2024-08-12T09:30:16+00:00",
+  "errs" : 165,
+  "warnings" : 24,
+  "hints" : 183,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "5.0.0",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1444104504
+}

@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>TEMPLATE.CPG-ON-EBMONFHIR.NETZWERK-UNIVERSITAETSMEDIZIN.DE\Artifacts Summary - FHIR v5.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+  <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/colors.css"/>
+<link rel="stylesheet" href="assets/css/celida.css"/>
+
+
+    <script src="assets/js/fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4.0"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Left logo - typically the publisher's logo - project or affiliate -->
+<div id="project-nav">
+  <a no-external="true" id="project-logo" href="https://www.github.com/CODEX-CELIDA/">
+    <img src="assets/images/logo_celida.png" alt="Project home" height="71"/>
+  </a>
+</div>
+
+  <!-- Right logo - for example the FHIR logo -->
+  <!-- Make sure you have authorization to use the FHIR logo -->
+<div id="family-nav">
+  <a no-external="true" id="family-logo" href="https://www.netzwerk-universitaetsmedizin.de">
+    <img src="assets/images/logo_num.svg" alt="FHIR website" height="70"/>
+  </a>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">CPG-on-EBMonFHIR template</span><br/>0.0.1-snapshot - ci-build</p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R5/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">CPG-on-EBMonFHIR template - Local Development build (v0.0.1-snapshot) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+    <!-- DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten --><div xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="http://hl7.org/fhir" class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Knowledge Artifacts: Activity Definitions</a>
+      </li>
+      <li>
+         <a href="#2">Knowledge Artifacts: Plan Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#4">Other</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Knowledge Artifacts: Activity Definitions </h3>
+   <p>
+    <p>These define activities that can be performed as part of content in this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-DailyAssessmentAntibioticDuration.html" title="ActivityDefinition/DailyAssessmentAntibioticDuration">Daily Assessment of the Duration of Antibiotic Therapy</a>
+               </td>
+               <td>
+<p>All Antibiotics are daily re-evaluated for the Duration of Therapy for each Antibiotic.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-DailyAssessmentAntibioticFocus.html" title="ActivityDefinition/DailyAssessmentAntibioticFocus">Daily Assessment of the Focus for Antibiotics</a>
+               </td>
+               <td>
+<p>All Antibiotics are daily re-evaluated for the Focus for each Antibiotic.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-DailyAssessmentAntibioticIndication.html" title="ActivityDefinition/DailyAssessmentAntibioticIndication">Daily Assessment of the Indication for Antibiotics</a>
+               </td>
+               <td>
+<p>All Antibiotics are daily re-evaluated for the Indication for each Antibiotic.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-DailyWeaningAssessments.html" title="ActivityDefinition/DailyWeaningAssessments">Daily Assessments of Readiness-to-wean from mechanical ventilation</a>
+               </td>
+               <td>
+<p>Readiness-to-wean from mechanical ventilation is assessed periodically every day.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-DailyMobilization.html" title="ActivityDefinition/DailyMobilization">Daily Mobilization</a>
+               </td>
+               <td>
+<p>Mobilization that occurs at least once a day.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-DailyStopOrdersInvasiveDevices.html" title="ActivityDefinition/DailyStopOrdersInvasiveDevices">Daily Stop-Orders for Invasive Devices</a>
+               </td>
+               <td>
+<p>All invasive devices have a daily re-evaluation regarding the necessity of each device.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-DailyTreatmentGoals.html" title="ActivityDefinition/DailyTreatmentGoals">Daily Treatment Goals</a>
+               </td>
+               <td>
+<p>Daily Treatment Goals are set at least once every day.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-DailyWeaningTrials.html" title="ActivityDefinition/DailyWeaningTrials">Daily Weaning Trials</a>
+               </td>
+               <td>
+<p>Weaning trials are performed periodically every day.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-DailyMultiprofessionalWardRoundsAction.html" title="ActivityDefinition/DailyMultiprofessionalWardRoundsAction">Daily multiprofessional ward rounds</a>
+               </td>
+               <td>
+<p>Every Intensive Care Patient is visited daily in multiprofessional ward rounds led by an intensive care specialist.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-DeliriumAssessmentEarlyShift.html" title="ActivityDefinition/DeliriumAssessmentEarlyShift">Delirium Assessment during Early Shift</a>
+               </td>
+               <td>
+<p>Delirium should be assessed once between 6 AM and &lt;2 PM every day.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-DeliriumAssessmentLateShift.html" title="ActivityDefinition/DeliriumAssessmentLateShift">Delirium Assessment during Late Shift</a>
+               </td>
+               <td>
+<p>Delirium should be assessed once between 2 AM and &lt;10 PM every day.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-DeliriumAssessmentNightShift.html" title="ActivityDefinition/DeliriumAssessmentNightShift">Delirium Assessment during Night Shift</a>
+               </td>
+               <td>
+<p>Delirium should be assessed once between 10 PM and &lt;6 AM every day.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-FirstCommunicationPatientsRelativesWithin72hours.html" title="ActivityDefinition/FirstCommunicationPatientsRelativesWithin72hours">First Communication with Patients and/or their Relatives within 72 hours</a>
+               </td>
+               <td>
+<p>An initial structured communication with the Patients and/or their Relatives occurs within 72 hours of Admission to Intensive Care.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-FirstEnteralFeedingWithin24hours.html" title="ActivityDefinition/FirstEnteralFeedingWithin24hours">First Enteral Feeding Within 24 hours</a>
+               </td>
+               <td>
+<p>First Enteral Feeding occurs within 24 hours after Admission to Intensive Care.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-FirstMobilizationWithin24hours.html" title="ActivityDefinition/FirstMobilizationWithin24hours">First Mobilization within 24 hours</a>
+               </td>
+               <td>
+<p>First Mobilization occurs within 24 hours after Admission to Intensive Care.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-FrequentBloodCultures.html" title="ActivityDefinition/FrequentBloodCultures">Frequent Blood Cultures</a>
+               </td>
+               <td>
+<p>The Frequency of Blood Cultures is at least 80 per 1000 days.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-NoDischargeWithHomeVentilation.html" title="ActivityDefinition/NoDischargeWithHomeVentilation">No Discharge with Home Ventilation</a>
+               </td>
+               <td>
+<p>The patient is not discharged with home ventilation.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-PainAssessmentEarlyShift.html" title="ActivityDefinition/PainAssessmentEarlyShift">Pain Assessment during Early Shift</a>
+               </td>
+               <td>
+<p>Pain should be assessed once between 6 AM and &lt;2 PM every day.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-PainAssessmentLateShift.html" title="ActivityDefinition/PainAssessmentLateShift">Pain Assessment during Late Shift</a>
+               </td>
+               <td>
+<p>Pain should be assessed once between 2 AM and &lt;10 PM every day.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-PainAssessmentNightShift.html" title="ActivityDefinition/PainAssessmentNightShift">Pain Assessment during Night Shift</a>
+               </td>
+               <td>
+<p>Pain should be assessed once between 10 PM and &lt;6 AM every day.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-SedationAssessmentEarlyShift.html" title="ActivityDefinition/SedationAssessmentEarlyShift">Sedation Assessment during Early Shift</a>
+               </td>
+               <td>
+<p>Sedation should be assessed once between 6 AM and &lt;2 PM every day.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-SedationAssessmentLateShift.html" title="ActivityDefinition/SedationAssessmentLateShift">Sedation Assessment during Late Shift</a>
+               </td>
+               <td>
+<p>Sedation should be assessed once between 2 AM and &lt;10 PM every day.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-SedationAssessmentNightShift.html" title="ActivityDefinition/SedationAssessmentNightShift">Sedation Assessment during Night Shift</a>
+               </td>
+               <td>
+<p>Sedation should be assessed once between 10 PM and &lt;6 AM every day.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-DailySufficientFeeding.html" title="ActivityDefinition/DailySufficientFeeding">The daily calorie intake is sufficient</a>
+               </td>
+               <td>
+<p>The daily amount of calories matches the individual requirements.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-WeeklyCommunicationPatientsRelatives.html" title="ActivityDefinition/WeeklyCommunicationPatientsRelatives">Weekly Communication with Patients and Relatives</a>
+               </td>
+               <td>
+<p>At least one structured communication with the Patients and/or their Relatives takes place every week.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>Knowledge Artifacts: Plan Definitions </h3>
+   <p>
+    <p>These define workflows, rules, strategies, or protocols as part of content in this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-DIVIQualityIndicator1.html" title="PlanDefinition/DIVIQualityIndicator1">DIVI Quality Indicator 1</a>
+               </td>
+               <td>
+<p>DIVI Quality Indicator 1: Daily multiprofessional ward rounds with documentation of treatment goals</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-DIVIQualityIndicator2.html" title="PlanDefinition/DIVIQualityIndicator2">DIVI Quality Indicator 2</a>
+               </td>
+               <td>
+<p>DIVI Quality Indicator 2: Management of Sedation, Analgesia and Delirium</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-DIVIQualityIndicator3.html" title="PlanDefinition/DIVIQualityIndicator3">DIVI Quality Indicator 3</a>
+               </td>
+               <td>
+<p>DIVI Quality Indicator 3: Patient-adapted Ventilation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-DIVIQualityIndicator4.html" title="PlanDefinition/DIVIQualityIndicator4">DIVI Quality Indicator 4</a>
+               </td>
+               <td>
+<p>DIVI Quality Indicator 4: Early Weaning from Invasive Ventilation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-DIVIQualityIndicator5.html" title="PlanDefinition/DIVIQualityIndicator5">DIVI Quality Indicator 5</a>
+               </td>
+               <td>
+<p>DIVI Quality Indicator 5: Infection Prevention</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-DIVIQualityIndicator6.html" title="PlanDefinition/DIVIQualityIndicator6">DIVI Quality Indicator 6</a>
+               </td>
+               <td>
+<p>DIVI Quality Indicator 6: Infection Management</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-DIVIQualityIndicator7.html" title="PlanDefinition/DIVIQualityIndicator7">DIVI Quality Indicator 7</a>
+               </td>
+               <td>
+<p>DIVI Quality Indicator 7: Patient-adapted Clinical Nutrition</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-DIVIQualityIndicator8.html" title="PlanDefinition/DIVIQualityIndicator8">DIVI Quality Indicator 8</a>
+               </td>
+               <td>
+<p>DIVI Quality Indicator 8: Structured Communication with Patients and Relatives</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-DIVIQualityIndicator9.html" title="PlanDefinition/DIVIQualityIndicator9">DIVI Quality Indicator 9</a>
+               </td>
+               <td>
+<p>DIVI Quality Indicator 9: Early Mobilization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-DailyDocumentationTreatmentGoals.html" title="PlanDefinition/DailyDocumentationTreatmentGoals">Daily Documentation of Treatment Goals</a>
+               </td>
+               <td>
+<p>Treatment Goals should be documented daily for every Intensive Care Patient.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-PeriodicAssessmentOfWeaning.html" title="PlanDefinition/PeriodicAssessmentOfWeaning">Daily Evaluation of Readiness-to-Wean and/or Weaning Trials</a>
+               </td>
+               <td>
+<p>All invasive ventilated Intensive Care Patients should be evaluated for their readiness-to-wean and/or receive weaning trials at least once every day.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-DailyMultiprofessionalWardRounds.html" title="PlanDefinition/DailyMultiprofessionalWardRounds">Daily multiprofessional ward rounds</a>
+               </td>
+               <td>
+<p>Every Intensive Care Patient should be visited daily in multiprofessional ward rounds led by an intensive care specialist.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-DischargeWithoutHomeVentilation.html" title="PlanDefinition/DischargeWithoutHomeVentilation">Discharge with dependence on home ventilation</a>
+               </td>
+               <td>
+<p>The fraction of patients discharged with dependence on home ventilation should be low.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-DrivingPressureLimitation.html" title="PlanDefinition/DrivingPressureLimitation">Driving Pressure Limitation</a>
+               </td>
+               <td>
+<p>Driving Pressure should be limited to a maximum of 15 cmH2O in all invasive ventilated ICU patients with severe ARDS.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-EarlyEnteralFeeding.html" title="PlanDefinition/EarlyEnteralFeeding">Early Enteral Feeding</a>
+               </td>
+               <td>
+<p>All Intensive Care Patients for which a sufficient oral nutrition is not expected on day one should be started on enteral feeding within 24 hours.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-FrequencyBloodCultures.html" title="PlanDefinition/FrequencyBloodCultures">Frequency of Blood Cultures</a>
+               </td>
+               <td>
+<p>The Frequency of Blood Cultures should be at least 80 per 1000 days.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-HandDisinfectantConsumption.html" title="PlanDefinition/HandDisinfectantConsumption">Hand Disinfectant Consumption</a>
+               </td>
+               <td>
+<p>The consumption of hand disinfectant should be more than 80 litres per 1000 days.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-AntibioticsIndicationFocusDuration.html" title="PlanDefinition/AntibioticsIndicationFocusDuration">Indication, Focus and Duration of Therapy for Antibiotics</a>
+               </td>
+               <td>
+<p>All Intensive Care Patients with Antibiotics should have a daily re-evaluation of the Indication, Focus and Duration of Therapy for each Antibiotic.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-InfectionDeviceRatio.html" title="PlanDefinition/InfectionDeviceRatio">Infection-per-Device Ratio</a>
+               </td>
+               <td>
+<p>The number of infections per invasive devices is at zero.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-InitialMobilization.html" title="PlanDefinition/InitialMobilization">Inital Mobilization</a>
+               </td>
+               <td>
+<p>All Intensive Care Patients should be mobilized within 24 hours after admission to ICU.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-InitialCommunicationPatientsRelatives.html" title="PlanDefinition/InitialCommunicationPatientsRelatives">Inital Structured Communication with Patients and/or Relatives</a>
+               </td>
+               <td>
+<p>For all Intensive Care Patients, an initial structured communication with the Patients and/or their Relatives should take place within 72 hours of Admission to Intensive Care.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-PEEPadjustedToFIO2-21to29.html" title="PlanDefinition/PEEPadjustedToFIO2-21to29">PEEP adjusted to FiO2=0.21-0.29</a>
+               </td>
+               <td>
+<p>PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-PEEPadjustedToFIO2-30to39.html" title="PlanDefinition/PEEPadjustedToFIO2-30to39">PEEP adjusted to FiO2=0.30-0.39</a>
+               </td>
+               <td>
+<p>PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-PEEPadjustedToFIO2-40to49.html" title="PlanDefinition/PEEPadjustedToFIO2-40to49">PEEP adjusted to FiO2=0.40-0.49</a>
+               </td>
+               <td>
+<p>PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-PEEPadjustedToFIO2-50to59.html" title="PlanDefinition/PEEPadjustedToFIO2-50to59">PEEP adjusted to FiO2=0.50-0.59</a>
+               </td>
+               <td>
+<p>PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-PEEPadjustedToFIO2-60to79.html" title="PlanDefinition/PEEPadjustedToFIO2-60to79">PEEP adjusted to FiO2=0.60-0.79</a>
+               </td>
+               <td>
+<p>PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-PEEPadjustedToFIO2-80to99.html" title="PlanDefinition/PEEPadjustedToFIO2-80to99">PEEP adjusted to FiO2=0.80-0.99</a>
+               </td>
+               <td>
+<p>PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-PEEPadjustedToFIO2-100.html" title="PlanDefinition/PEEPadjustedToFIO2-100">PEEP adjusted to FiO2=1.00</a>
+               </td>
+               <td>
+<p>PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-PeriodicAssessmentOfSedationAnalgesiaDelirium.html" title="PlanDefinition/PeriodicAssessmentOfSedationAnalgesiaDelirium">Periodic Assessment of Sedation Level, Analgesia Level and Delirium Status</a>
+               </td>
+               <td>
+<p>Sedation Level, Analgesia Level and Delirium Status should be assessed at least once in each shift (time-slots 6-14, 14-22, 22-6) in all Intensive Care Patients.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-PeriodicMobilization.html" title="PlanDefinition/PeriodicMobilization">Periodic Mobilization</a>
+               </td>
+               <td>
+<p>All Intensive Care Patients that don’t have a no-mobilization order should be mobilized at least once every day.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-PeriodicCommunicationPatientsRelatives.html" title="PlanDefinition/PeriodicCommunicationPatientsRelatives">Periodic Structured Communication with Patients and/or Relatives</a>
+               </td>
+               <td>
+<p>For all Intensive Care Patients, at least one structured communication with the Patients and/or their Relatives should take place every week.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-PlateauPressureLimitation.html" title="PlanDefinition/PlateauPressureLimitation">Plateau Pressure Limitation</a>
+               </td>
+               <td>
+<p>Plateau Pressure should be limited to a maximum of 30 cmH2O in all invasive ventilated ICU patients with severe ARDS.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-PenumoniaVentilatedPatientRatio.html" title="PlanDefinition/PenumoniaVentilatedPatientRatio">Pneumonia-per-Ventilated-Patients Ratio</a>
+               </td>
+               <td>
+<p>The number of pneumonia cases per ventilated patients should be low.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-SedationLevelAnalgesiaLevelDeliriumStatusInAcceptableRanges.html" title="PlanDefinition/SedationLevelAnalgesiaLevelDeliriumStatusInAcceptableRanges">Sedation Level, Analgesia Level and Delirium Status in acceptable ranges.</a>
+               </td>
+               <td>
+<p>Sedation Level, Analgesia Level and Delirium Status should be in acceptable ranges.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-StopOdersInvasiveDevices.html" title="PlanDefinition/StopOdersInvasiveDevices">Stop Orders for Invasive Devices</a>
+               </td>
+               <td>
+<p>All Intensive Care Patients with invasive devices should have a daily re-evaluation regarding the necessity of each device.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-SufficientFeeding.html" title="PlanDefinition/SufficientFeeding">Sufficient Feeding in Non-Adipose Patients</a>
+               </td>
+               <td>
+<p>Every day, all Non-Adipose Intensive Care Patients should receive the amount of Calories that match their daily individual requirements.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PlanDefinition-TidalVolumeLimitation.html" title="PlanDefinition/TidalVolumeLimitation">Tidal Volume Limitation</a>
+               </td>
+               <td>
+<p>Tidal volume should be limited to a maximum of 6 ml/kg ideal body weight in all invasive ventilated ICU patients with severe ARDS.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
+   <h3>Terminology: Code Systems </h3>
+   <p>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-codex-celida.html" title="CodeSystem/codex-celida">CODEX-CELIDA</a>
+               </td>
+               <td>
+<p>Concepts required in recommendations that are not defined elsewhere</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-divi-qi-s.html" title="CodeSystem/divi-qi-s">DIVI Sektion Qualitätsverbesserung und Informationstechnologie Qualitätsindikatoren Semantik</a>
+               </td>
+               <td>
+<p>DIVI Sektion Qualitätsverbesserung und Informationstechnologie Qualitätsindikatoren Semantik</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Other </h3>
+   <p>
+    <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-IntensiveCarePatients.html" title="EvidenceVariable/IntensiveCarePatients">Population: Intensive Care Patients</a>
+               </td>
+               <td>
+<p>Intensive Care Patients</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-IntensiveCarePatients-ClinicallyFed-NoAdipositas.html" title="EvidenceVariable/IntensiveCarePatients-ClinicallyFed-NoAdipositas">Population: Intensive Care Patients that are clinically fed and have no Adipositas</a>
+               </td>
+               <td>
+<p>Intensive Care Patients that are clinically fed and have no Adipositas</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-IntensiveCarePatients-IntensiveCareLongerThanThreeDays.html" title="EvidenceVariable/IntensiveCarePatients-IntensiveCareLongerThanThreeDays">Population: Intensive Care Patients with Intensive Care Treatment Longer Than Three Days</a>
+               </td>
+               <td>
+<p>Intensive Care Patients with Intensive Care Treatment Longer Than Three Days</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-IntensiveCarePatients-InvasiveVentilation.html" title="EvidenceVariable/IntensiveCarePatients-InvasiveVentilation">Population: Intensive Care Patients with Invasive Ventilation</a>
+               </td>
+               <td>
+<p>Intensive Care Patients with Invasive Ventilation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-IntensiveCarePatients-InvasiveVentilation-NoHomeVentilation.html" title="EvidenceVariable/IntensiveCarePatients-InvasiveVentilation-NoHomeVentilation">Population: Intensive Care Patients with Invasive Ventilation and no Home Ventilation</a>
+               </td>
+               <td>
+<p>Intensive Care Patients with Invasive Ventilation and no Home Ventilation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-IntensiveCarePatients-PredictedInsufficientEnergyIntake.html" title="EvidenceVariable/IntensiveCarePatients-PredictedInsufficientEnergyIntake">Population: Intensive Care Patients with Predicted Insufficient Energy Intake</a>
+               </td>
+               <td>
+<p>Intensive Care Patients with Predicted Insufficient Energy Intake</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-IntensiveCarePatients-SevereARDS-InvasiveVentilation.html" title="EvidenceVariable/IntensiveCarePatients-SevereARDS-InvasiveVentilation">Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation</a>
+               </td>
+               <td>
+<p>Intensive Care Patients with Severe ARDS and Invasive Ventilation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-21to29.html" title="EvidenceVariable/IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-21to29">Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.21-0.29</a>
+               </td>
+               <td>
+<p>Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.21-0.29</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-30to39.html" title="EvidenceVariable/IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-30to39">Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.30-0.39</a>
+               </td>
+               <td>
+<p>Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.30-0.39</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-40to49.html" title="EvidenceVariable/IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-40to49">Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.40-0.49</a>
+               </td>
+               <td>
+<p>Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.40-0.49</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-50to59.html" title="EvidenceVariable/IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-50to59">Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.50-0.59</a>
+               </td>
+               <td>
+<p>Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.50-0.59</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-60to79.html" title="EvidenceVariable/IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-60to79">Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.60-0.79</a>
+               </td>
+               <td>
+<p>Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.60-0.79</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-80to99.html" title="EvidenceVariable/IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-80to99">Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.80-0.99</a>
+               </td>
+               <td>
+<p>Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=0.80-0.99</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-100.html" title="EvidenceVariable/IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-100">Population: Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=1.00</a>
+               </td>
+               <td>
+<p>Intensive Care Patients with Severe ARDS and Invasive Ventilation with FiO2=1.00</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-IntensiveCarePatients-Antibiotic.html" title="EvidenceVariable/IntensiveCarePatients-Antibiotic">Population: Intensive Care Patients with at least one antibiotic</a>
+               </td>
+               <td>
+<p>Intensive Care Patients with at least one antibiotic</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-IntensiveCarePatients-InvasiveDevice.html" title="EvidenceVariable/IntensiveCarePatients-InvasiveDevice">Population: Intensive Care Patients with at least one invasive device</a>
+               </td>
+               <td>
+<p>Intensive Care Patients with at least one invasive device</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="EvidenceVariable-IntensiveCarePatients-WithOut-NoMobilizationOrder.html" title="EvidenceVariable/IntensiveCarePatients-WithOut-NoMobilizationOrder">Population: Intensive Care Patients without a no-mobilization order</a>
+               </td>
+               <td>
+<p>Intensive Care Patients without a no-mobilization order</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+</div>
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2023+ <a href="https://www.example.com">Example</a>.  Package template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de#0.0.1-snapshot based on <a href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Aug 12, 2024 09:30+0000">2024-08-12</span>
+          <br/>
+          <span style="color: #FFFF77">
+            <p style="color: white"><a name="l1648">​</a>
+       Links: <a href="toc.html">Table of Contents</a> |
+       <a href="qa.html">QA Report</a> |
+       <a href="https://github.com/CODEX-CELIDA/template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de/issues/" target="_blank">Issues</a> |
+       <a href="https://github.com/CODEX-CELIDA/template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de/issues/new" target="_blank">Submit an issue</a> |
+       <a href="http://hl7.org/fhir/R5//history.html" target="_blank">Version History</a> |
+       <a rel="license" href="http://hl7.org/fhir/R5/license.html"><img src="assets/images/cc-by.svg" alt="CC-BY" style="border-style: none;" height="17"/></a> |
+</p>
+
+<script src="assets/js/imageMapResizer.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+       imageMapResize();
+</script>
+
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+
+    <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

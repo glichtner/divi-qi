@@ -1,0 +1,100 @@
+{
+  "resourceType" : "EvidenceVariable",
+  "id" : "IntensiveCarePatients-ClinicallyFed-NoAdipositas",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable IntensiveCarePatients-ClinicallyFed-NoAdipositas</b></p><a name=\"IntensiveCarePatients-ClinicallyFed-NoAdipositas\"> </a><a name=\"hcIntensiveCarePatients-ClinicallyFed-NoAdipositas\"> </a><a name=\"IntensiveCarePatients-ClinicallyFed-NoAdipositas-en-US\"> </a><p><b>url</b>: <a href=\"EvidenceVariable-IntensiveCarePatients-ClinicallyFed-NoAdipositas.html\">EvidenceVariable Population: Intensive Care Patients that are clinically fed and have no Adipositas</a></p><p><b>name</b>: Population_IntensiveCarePatients_ClinicallyFed_NoAdipositas</p><p><b>title</b>: Population: Intensive Care Patients that are clinically fed and have no Adipositas</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>description</b>: </p><div><p>Intensive Care Patients that are clinically fed and have no Adipositas</p>\n</div><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 71388002}\">Procedure (procedure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 133903000}\">Care of Intensive Care Unit Patient</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 71388002}\">Procedure (procedure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 75118006}\">Feeding Patient</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 39156-5}\">Body Mass Index (BMI) [Ratio]</span></td><td>0-29.999999999 kg/m2</td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: true</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 103306004}\">Contraindication to</span></td><td><span title=\"Codes:{http://snomed.info/sct 229912004}\">Enteral Feeding</span></td></tr></table></blockquote></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_clinically-fed_no-adipositas",
+  "name" : "Population_IntensiveCarePatients_ClinicallyFed_NoAdipositas",
+  "title" : "Population: Intensive Care Patients that are clinically fed and have no Adipositas",
+  "status" : "active",
+  "date" : "2024-08-12T09:30:16+00:00",
+  "description" : "Intensive Care Patients that are clinically fed and have no Adipositas",
+  "characteristic" : [{
+    "exclude" : false,
+    "definitionByTypeAndValue" : {
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "71388002",
+          "display" : "Procedure (procedure)"
+        }]
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "133903000",
+          "display" : "Care of Intensive Care Unit Patient"
+        }]
+      }
+    }
+  },
+  {
+    "exclude" : false,
+    "definitionByTypeAndValue" : {
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "71388002",
+          "display" : "Procedure (procedure)"
+        }]
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "75118006",
+          "display" : "Feeding Patient"
+        }]
+      }
+    }
+  },
+  {
+    "exclude" : false,
+    "definitionByTypeAndValue" : {
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "39156-5",
+          "display" : "Body Mass Index (BMI) [Ratio]"
+        }]
+      },
+      "valueRange" : {
+        "low" : {
+          "value" : 0,
+          "unit" : "kg/m2",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "kg/m2"
+        },
+        "high" : {
+          "value" : 29.999999999,
+          "unit" : "kg/m2",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "kg/m2"
+        }
+      }
+    }
+  },
+  {
+    "exclude" : true,
+    "definitionByTypeAndValue" : {
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "103306004",
+          "display" : "Contraindication to"
+        }]
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "229912004",
+          "display" : "Enteral Feeding"
+        }]
+      }
+    }
+  }]
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="DailyWeaningAssessments"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActivityDefinition DailyWeaningAssessments</b></p><a name="DailyWeaningAssessments"> </a><a name="hcDailyWeaningAssessments"> </a><a name="DailyWeaningAssessments-en-US"> </a><p><b>url</b>: <a href="ActivityDefinition-DailyWeaningAssessments.html">ActivityDefinition Daily Assessments of Readiness-to-wean from mechanical ventilation</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: DailyWeaningAssessments</p><p><b>title</b>: Daily Assessments of Readiness-to-wean from mechanical ventilation</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>Readiness-to-wean from mechanical ventilation is assessed periodically every day.</p>
+</div><p><b>code</b>: <span title="Codes:{http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik EVAL-VENT-WEAN}">Assessment of Readiness-to-wean from mechanical ventilation</span></p><p><b>timing</b>: Once per1 days</p></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-weaning-assessments"/>
+  <version value="7.0"/>
+  <name value="DailyWeaningAssessments"/>
+  <title value="Daily Assessments of Readiness-to-wean from mechanical ventilation"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-08-12T09:30:16+00:00"/>
+  <publisher value="NUM CODEX+ CELIDA"/>
+  <description value="Readiness-to-wean from mechanical ventilation is assessed periodically every day."/>
+  <code>
+    <coding>
+      <system value="http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik"/>
+      <code value="EVAL-VENT-WEAN"/>
+      <display value="Assessment of Readiness-to-wean from mechanical ventilation"/>
+    </coding>
+  </code>
+  <timingTiming>
+    <repeat>
+      <frequency value="1"/>
+      <period value="1"/>
+      <periodUnit value="d"/>
+    </repeat>
+  </timingTiming>
+</ActivityDefinition>

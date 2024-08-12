@@ -1,0 +1,20 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik",
+      "version" : null,
+      "status" : "draft",
+      "name" : "DIVI_QI_S",
+      "title" : "DIVI Sektion Qualitätsverbesserung und Informationstechnologie Qualitätsindikatoren Semantik",
+      "description" : "DIVI Sektion Qualitätsverbesserung und Informationstechnologie Qualitätsindikatoren Semantik"
+    },
+    {
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/CodeSystem/codex-celida",
+      "version" : null,
+      "status" : "draft",
+      "name" : "CODEX_CELIDA",
+      "title" : "CODEX-CELIDA",
+      "description" : "Concepts required in recommendations that are not defined elsewhere"
+    }
+  ]
+}

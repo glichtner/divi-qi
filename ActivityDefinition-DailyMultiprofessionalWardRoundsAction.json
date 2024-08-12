@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "DailyMultiprofessionalWardRoundsAction",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition DailyMultiprofessionalWardRoundsAction</b></p><a name=\"DailyMultiprofessionalWardRoundsAction\"> </a><a name=\"hcDailyMultiprofessionalWardRoundsAction\"> </a><a name=\"DailyMultiprofessionalWardRoundsAction-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-DailyMultiprofessionalWardRoundsAction.html\">ActivityDefinition Daily multiprofessional ward rounds</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: DailyMultiprofessionalWardRoundsAction</p><p><b>title</b>: Daily multiprofessional ward rounds</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>Every Intensive Care Patient is visited daily in multiprofessional ward rounds led by an intensive care specialist.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik VISITE-FA-ZB-ITS}\">Multidisciplinary ward round led by an intensive care specialist</span></p><p><b>timing</b>: Once per1 days</p></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-ward-rounds",
+  "version" : "7.0",
+  "name" : "DailyMultiprofessionalWardRoundsAction",
+  "title" : "Daily multiprofessional ward rounds",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-08-12T09:30:16+00:00",
+  "publisher" : "NUM CODEX+ CELIDA",
+  "description" : "Every Intensive Care Patient is visited daily in multiprofessional ward rounds led by an intensive care specialist.",
+  "code" : {
+    "coding" : [{
+      "system" : "http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik",
+      "code" : "VISITE-FA-ZB-ITS",
+      "display" : "Multidisciplinary ward round led by an intensive care specialist"
+    }]
+  },
+  "timingTiming" : {
+    "repeat" : {
+      "frequency" : 1,
+      "period" : 1,
+      "periodUnit" : "d"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="DIVIQualityIndicator8"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PlanDefinition DIVIQualityIndicator8</b></p><a name="DIVIQualityIndicator8"> </a><a name="hcDIVIQualityIndicator8"> </a><a name="DIVIQualityIndicator8-en-US"> </a><p><b>url</b>: <a href="PlanDefinition-DIVIQualityIndicator8.html">PlanDefinition DIVI Quality Indicator 8</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: DiVI_QualityIndicator_8</p><p><b>title</b>: DIVI Quality Indicator 8</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type workflow-definition}">Workflow Definition</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-03-29</p><p><b>publisher</b>: Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI)</p><p><b>description</b>: </p><div><p>DIVI Quality Indicator 8: Structured Communication with Patients and Relatives</p>
+</div><blockquote><p><b>action</b></p><p><b>title</b>: DIVI Quality Indicator 8a: Inital Structured Communication with Patients and/or Relatives</p><p><b>description</b>: </p><div><p>For all Intensive Care Patients, an initial structured communication with the Patients and/or their Relatives should take place within 72 hours of Admission to Intensive Care.</p>
+</div><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based Care</span></p><p><b>definition</b>: <a href="PlanDefinition-InitialCommunicationPatientsRelatives.html">Inital Structured Communication with Patients and/or Relatives</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: DIVI Quality Indicator 8b: Periodic Structured Communication with Patients and/or Relatives</p><p><b>description</b>: </p><div><p>For all Intensive Care Patients, at least one structured communication with the Patients and/or their Relatives should take place every week.</p>
+</div><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based Care</span></p><p><b>definition</b>: <a href="PlanDefinition-PeriodicCommunicationPatientsRelatives.html">Periodic Structured Communication with Patients and/or Relatives</a></p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="all"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-8"/>
+  <version value="1.0"/>
+  <name value="DiVI_QualityIndicator_8"/>
+  <title value="DIVI Quality Indicator 8"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="workflow-definition"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-03-29"/>
+  <publisher value="Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI)"/>
+  <description value="DIVI Quality Indicator 8: Structured Communication with Patients and Relatives"/>
+  <action>
+    <title value="DIVI Quality Indicator 8a: Inital Structured Communication with Patients and/or Relatives"/>
+    <description value="For all Intensive Care Patients, an initial structured communication with the Patients and/or their Relatives should take place within 72 hours of Admission to Intensive Care."/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/initial-communication_patients-relatives"/>
+  </action>
+  <action>
+    <title value="DIVI Quality Indicator 8b: Periodic Structured Communication with Patients and/or Relatives"/>
+    <description value="For all Intensive Care Patients, at least one structured communication with the Patients and/or their Relatives should take place every week."/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/periodic-communication_patients-relatives"/>
+  </action>
+</PlanDefinition>

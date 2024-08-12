@@ -1,0 +1,113 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/IntensiveCarePatients-InvasiveVentilation-NoHomeVentilation> a fhir:EvidenceVariable ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IntensiveCarePatients-InvasiveVentilation-NoHomeVentilation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable IntensiveCarePatients-InvasiveVentilation-NoHomeVentilation</b></p><a name=\"IntensiveCarePatients-InvasiveVentilation-NoHomeVentilation\"> </a><a name=\"hcIntensiveCarePatients-InvasiveVentilation-NoHomeVentilation\"> </a><a name=\"IntensiveCarePatients-InvasiveVentilation-NoHomeVentilation-en-US\"> </a><p><b>url</b>: <a href=\"EvidenceVariable-IntensiveCarePatients-InvasiveVentilation-NoHomeVentilation.html\">EvidenceVariable Population: Intensive Care Patients with Invasive Ventilation and no Home Ventilation</a></p><p><b>name</b>: Population_IntensiveCarePatients_InvasiveVentilation_NoHomeVentilation</p><p><b>title</b>: Population: Intensive Care Patients with Invasive Ventilation and no Home Ventilation</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>description</b>: </p><div><p>Intensive Care Patients with Invasive Ventilation and no Home Ventilation</p>\n</div><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 71388002}\">Procedure (procedure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 133903000}\">Care of Intensive Care Unit Patient</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 71388002}\">Procedure (procedure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 1258985005}\">Invasive mechanical ventilation</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: true</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 60631000119109}\">Dependence on home ventilator</span></td></tr></table><h3>TimeFromEvents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Event[x]</b></td><td><b>Range</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 305351004}\">Admission to Intensive Care Unit</span></td><td>?-0</td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_invasive-ventilation_no-home-ventilation"^^xsd:anyURI] ; # 
+  fhir:name [ fhir:v "Population_IntensiveCarePatients_InvasiveVentilation_NoHomeVentilation"] ; # 
+  fhir:title [ fhir:v "Population: Intensive Care Patients with Invasive Ventilation and no Home Ventilation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-08-12T09:30:16+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "Intensive Care Patients with Invasive Ventilation and no Home Ventilation"] ; # 
+  fhir:characteristic ( [
+     fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:definitionByTypeAndValue [
+       fhir:type [
+         fhir:coding ( [
+           a sct:71388002 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "71388002" ] ;
+           fhir:display [ fhir:v "Procedure (procedure)" ]
+         ] )
+       ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:133903000 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "133903000" ] ;
+           fhir:display [ fhir:v "Care of Intensive Care Unit Patient" ]
+         ] )
+       ]
+     ]
+  ] [
+     fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:definitionByTypeAndValue [
+       fhir:type [
+         fhir:coding ( [
+           a sct:71388002 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "71388002" ] ;
+           fhir:display [ fhir:v "Procedure (procedure)" ]
+         ] )
+       ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:1258985005 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "1258985005" ] ;
+           fhir:display [ fhir:v "Invasive mechanical ventilation" ]
+         ] )
+       ]
+     ]
+  ] [
+     fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:definitionByTypeAndValue [
+       fhir:type [
+         fhir:coding ( [
+           a sct:404684003 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "404684003" ] ;
+           fhir:display [ fhir:v "Clinical finding (finding)" ]
+         ] )
+       ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:60631000119109 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "60631000119109" ] ;
+           fhir:display [ fhir:v "Dependence on home ventilator" ]
+         ] )
+       ]
+     ] ;
+     fhir:timeFromEvent ( [
+       fhir:event [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:305351004 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "305351004" ] ;
+           fhir:display [ fhir:v "Admission to Intensive Care Unit" ]
+         ] )
+       ] ;
+       fhir:range [
+         fhir:high [
+           fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "day" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "d" ]
+         ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

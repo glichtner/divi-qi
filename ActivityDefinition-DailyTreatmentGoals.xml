@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="DailyTreatmentGoals"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActivityDefinition DailyTreatmentGoals</b></p><a name="DailyTreatmentGoals"> </a><a name="hcDailyTreatmentGoals"> </a><a name="DailyTreatmentGoals-en-US"> </a><p><b>url</b>: <a href="ActivityDefinition-DailyTreatmentGoals.html">ActivityDefinition Daily Treatment Goals</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: DailyTreatmentGoals</p><p><b>title</b>: Daily Treatment Goals</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>Daily Treatment Goals are set at least once every day.</p>
+</div><p><b>code</b>: <span title="Codes:{http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik TAGESZIEL}">Setting daily treatment goals</span></p><p><b>timing</b>: Once per1 days</p></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-treatment-goals"/>
+  <version value="7.0"/>
+  <name value="DailyTreatmentGoals"/>
+  <title value="Daily Treatment Goals"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-08-12T09:30:16+00:00"/>
+  <publisher value="NUM CODEX+ CELIDA"/>
+  <description value="Daily Treatment Goals are set at least once every day."/>
+  <code>
+    <coding>
+      <system value="http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik"/>
+      <code value="TAGESZIEL"/>
+      <display value="Setting daily treatment goals"/>
+    </coding>
+  </code>
+  <timingTiming>
+    <repeat>
+      <frequency value="1"/>
+      <period value="1"/>
+      <periodUnit value="d"/>
+    </repeat>
+  </timingTiming>
+</ActivityDefinition>

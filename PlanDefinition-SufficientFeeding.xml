@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="SufficientFeeding"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PlanDefinition SufficientFeeding</b></p><a name="SufficientFeeding"> </a><a name="hcSufficientFeeding"> </a><a name="SufficientFeeding-en-US"> </a><p><b>url</b>: <a href="PlanDefinition-SufficientFeeding.html">PlanDefinition Sufficient Feeding in Non-Adipose Patients</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: Intervention_SufficientFeeding</p><p><b>title</b>: Sufficient Feeding in Non-Adipose Patients</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>subject</b>: <a href="EvidenceVariable-IntensiveCarePatients-ClinicallyFed-NoAdipositas.html">Population: Intensive Care Patients that are clinically fed and have no Adipositas</a></p><p><b>date</b>: 2024-03-29</p><p><b>description</b>: </p><div><p>Every day, all Non-Adipose Intensive Care Patients should receive the amount of Calories that match their daily individual requirements.</p>
+</div><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Definition[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 74964007}">Other (qualifier value)</span></td><td><a href="ActivityDefinition-DailySufficientFeeding.html">The daily calorie intake is sufficient</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf">
+    <valueCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-7"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="all"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/sufficient-feeding"/>
+  <version value="1.0"/>
+  <name value="Intervention_SufficientFeeding"/>
+  <title value="Sufficient Feeding in Non-Adipose Patients"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <subjectCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_clinically-fed_no-adipositas"/>
+  <date value="2024-03-29"/>
+  <description value="Every day, all Non-Adipose Intensive Care Patients should receive the amount of Calories that match their daily individual requirements."/>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="74964007"/>
+        <display value="Other (qualifier value)"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-sufficient-feeding"/>
+  </action>
+</PlanDefinition>

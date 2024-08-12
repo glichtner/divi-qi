@@ -1,0 +1,21 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "codex-celida",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem codex-celida</b></p><a name=\"codex-celida\"> </a><a name=\"hccodex-celida\"> </a><a name=\"codex-celida-en-US\"> </a><p>This  code system <code>https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/CodeSystem/codex-celida</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">tvpibw<a name=\"codex-celida-tvpibw\"> </a></td><td>Tidal volume / ideal body weight (ARDSnet)</td><td>Tidal volume per ideal body weight according to ARDSnet formula</td></tr></table></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/CodeSystem/codex-celida",
+  "name" : "CODEX_CELIDA",
+  "title" : "CODEX-CELIDA",
+  "status" : "draft",
+  "date" : "2024-08-12T09:30:16+00:00",
+  "description" : "Concepts required in recommendations that are not defined elsewhere",
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "tvpibw",
+    "display" : "Tidal volume / ideal body weight (ARDSnet)",
+    "definition" : "Tidal volume per ideal body weight according to ARDSnet formula"
+  }]
+}

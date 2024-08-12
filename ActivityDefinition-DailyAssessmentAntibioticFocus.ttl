@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/DailyAssessmentAntibioticFocus> a fhir:ActivityDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DailyAssessmentAntibioticFocus"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition DailyAssessmentAntibioticFocus</b></p><a name=\"DailyAssessmentAntibioticFocus\"> </a><a name=\"hcDailyAssessmentAntibioticFocus\"> </a><a name=\"DailyAssessmentAntibioticFocus-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-DailyAssessmentAntibioticFocus.html\">ActivityDefinition Daily Assessment of the Focus for Antibiotics</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: DailyAssessmentAntibioticFocus</p><p><b>title</b>: Daily Assessment of the Focus for Antibiotics</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>All Antibiotics are daily re-evaluated for the Focus for each Antibiotic.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 272737002}\">Site of</span></p><p><b>timing</b>: Once per1 days</p></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-assessment-antibiotic-focus"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "7.0"] ; # 
+  fhir:name [ fhir:v "DailyAssessmentAntibioticFocus"] ; # 
+  fhir:title [ fhir:v "Daily Assessment of the Focus for Antibiotics"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-12T09:30:16+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NUM CODEX+ CELIDA"] ; # 
+  fhir:description [ fhir:v "All Antibiotics are daily re-evaluated for the Focus for each Antibiotic."] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:272737002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "272737002" ] ;
+       fhir:display [ fhir:v "Site of" ]
+     ] )
+  ] ; # 
+  fhir:timing [
+     a fhir:Timing ;
+     fhir:repeat [
+       fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+       fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+       fhir:periodUnit [ fhir:v "d" ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

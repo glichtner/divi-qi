@@ -1,0 +1,41 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/DailyWeaningAssessments> a fhir:ActivityDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DailyWeaningAssessments"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition DailyWeaningAssessments</b></p><a name=\"DailyWeaningAssessments\"> </a><a name=\"hcDailyWeaningAssessments\"> </a><a name=\"DailyWeaningAssessments-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-DailyWeaningAssessments.html\">ActivityDefinition Daily Assessments of Readiness-to-wean from mechanical ventilation</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: DailyWeaningAssessments</p><p><b>title</b>: Daily Assessments of Readiness-to-wean from mechanical ventilation</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>Readiness-to-wean from mechanical ventilation is assessed periodically every day.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik EVAL-VENT-WEAN}\">Assessment of Readiness-to-wean from mechanical ventilation</span></p><p><b>timing</b>: Once per1 days</p></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-weaning-assessments"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "7.0"] ; # 
+  fhir:name [ fhir:v "DailyWeaningAssessments"] ; # 
+  fhir:title [ fhir:v "Daily Assessments of Readiness-to-wean from mechanical ventilation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-12T09:30:16+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NUM CODEX+ CELIDA"] ; # 
+  fhir:description [ fhir:v "Readiness-to-wean from mechanical ventilation is assessed periodically every day."] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EVAL-VENT-WEAN" ] ;
+       fhir:display [ fhir:v "Assessment of Readiness-to-wean from mechanical ventilation" ]
+     ] )
+  ] ; # 
+  fhir:timing [
+     a fhir:Timing ;
+     fhir:repeat [
+       fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+       fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+       fhir:periodUnit [ fhir:v "d" ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

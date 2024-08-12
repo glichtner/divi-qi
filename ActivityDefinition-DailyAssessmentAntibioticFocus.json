@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "DailyAssessmentAntibioticFocus",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition DailyAssessmentAntibioticFocus</b></p><a name=\"DailyAssessmentAntibioticFocus\"> </a><a name=\"hcDailyAssessmentAntibioticFocus\"> </a><a name=\"DailyAssessmentAntibioticFocus-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-DailyAssessmentAntibioticFocus.html\">ActivityDefinition Daily Assessment of the Focus for Antibiotics</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: DailyAssessmentAntibioticFocus</p><p><b>title</b>: Daily Assessment of the Focus for Antibiotics</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>All Antibiotics are daily re-evaluated for the Focus for each Antibiotic.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 272737002}\">Site of</span></p><p><b>timing</b>: Once per1 days</p></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-assessment-antibiotic-focus",
+  "version" : "7.0",
+  "name" : "DailyAssessmentAntibioticFocus",
+  "title" : "Daily Assessment of the Focus for Antibiotics",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-08-12T09:30:16+00:00",
+  "publisher" : "NUM CODEX+ CELIDA",
+  "description" : "All Antibiotics are daily re-evaluated for the Focus for each Antibiotic.",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "272737002",
+      "display" : "Site of"
+    }]
+  },
+  "timingTiming" : {
+    "repeat" : {
+      "frequency" : 1,
+      "period" : 1,
+      "periodUnit" : "d"
+    }
+  }
+}

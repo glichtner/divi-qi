@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="InitialCommunicationPatientsRelatives"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PlanDefinition InitialCommunicationPatientsRelatives</b></p><a name="InitialCommunicationPatientsRelatives"> </a><a name="hcInitialCommunicationPatientsRelatives"> </a><a name="InitialCommunicationPatientsRelatives-en-US"> </a><p><b>url</b>: <a href="PlanDefinition-InitialCommunicationPatientsRelatives.html">PlanDefinition Inital Structured Communication with Patients and/or Relatives</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: Intervention_Initial_Communication_PatientsRelatives</p><p><b>title</b>: Inital Structured Communication with Patients and/or Relatives</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>subject</b>: <a href="EvidenceVariable-IntensiveCarePatients-IntensiveCareLongerThanThreeDays.html">Population: Intensive Care Patients with Intensive Care Treatment Longer Than Three Days</a></p><p><b>date</b>: 2024-03-29</p><p><b>description</b>: </p><div><p>For all Intensive Care Patients, an initial structured communication with the Patients and/or their Relatives should take place within 72 hours of Admission to Intensive Care.</p>
+</div><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Definition[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 74964007}">Other (qualifier value)</span></td><td><a href="ActivityDefinition-FirstCommunicationPatientsRelativesWithin72hours.html">First Communication with Patients and/or their Relatives within 72 hours</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf">
+    <valueCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-8"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="all"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/initial-communication_patients-relatives"/>
+  <version value="1.0"/>
+  <name value="Intervention_Initial_Communication_PatientsRelatives"/>
+  <title value="Inital Structured Communication with Patients and/or Relatives"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <subjectCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_intensive-care-longer-than-three-days"/>
+  <date value="2024-03-29"/>
+  <description value="For all Intensive Care Patients, an initial structured communication with the Patients and/or their Relatives should take place within 72 hours of Admission to Intensive Care."/>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="74964007"/>
+        <display value="Other (qualifier value)"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/first-communication-patients-relatives-within-24hours"/>
+  </action>
+</PlanDefinition>

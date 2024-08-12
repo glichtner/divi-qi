@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/IntensiveCarePatients-InvasiveDevice> a fhir:EvidenceVariable ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IntensiveCarePatients-InvasiveDevice"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable IntensiveCarePatients-InvasiveDevice</b></p><a name=\"IntensiveCarePatients-InvasiveDevice\"> </a><a name=\"hcIntensiveCarePatients-InvasiveDevice\"> </a><a name=\"IntensiveCarePatients-InvasiveDevice-en-US\"> </a><p><b>url</b>: <a href=\"EvidenceVariable-IntensiveCarePatients-InvasiveDevice.html\">EvidenceVariable Population: Intensive Care Patients with at least one invasive device</a></p><p><b>name</b>: Population_IntensiveCarePatients_InvasiveDevice</p><p><b>title</b>: Population: Intensive Care Patients with at least one invasive device</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>description</b>: </p><div><p>Intensive Care Patients with at least one invasive device</p>\n</div><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 71388002}\">Procedure (procedure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 133903000}\">Care of Intensive Care Unit Patient</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 49062001}\">Device (physical object)</span></td><td><span title=\"Codes:{http://snomed.info/sct 19923001}\">Catheter</span></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_invasive-device"^^xsd:anyURI] ; # 
+  fhir:name [ fhir:v "Population_IntensiveCarePatients_InvasiveDevice"] ; # 
+  fhir:title [ fhir:v "Population: Intensive Care Patients with at least one invasive device"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-08-12T09:30:16+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "Intensive Care Patients with at least one invasive device"] ; # 
+  fhir:characteristic ( [
+     fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:definitionByTypeAndValue [
+       fhir:type [
+         fhir:coding ( [
+           a sct:71388002 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "71388002" ] ;
+           fhir:display [ fhir:v "Procedure (procedure)" ]
+         ] )
+       ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:133903000 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "133903000" ] ;
+           fhir:display [ fhir:v "Care of Intensive Care Unit Patient" ]
+         ] )
+       ]
+     ]
+  ] [
+     fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:definitionByTypeAndValue [
+       fhir:type [
+         fhir:coding ( [
+           a sct:49062001 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "49062001" ] ;
+           fhir:display [ fhir:v "Device (physical object)" ]
+         ] )
+       ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:19923001 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "19923001" ] ;
+           fhir:display [ fhir:v "Catheter" ]
+         ] )
+       ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

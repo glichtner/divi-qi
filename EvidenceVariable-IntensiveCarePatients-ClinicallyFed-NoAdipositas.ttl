@@ -1,0 +1,122 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/EvidenceVariable/IntensiveCarePatients-ClinicallyFed-NoAdipositas> a fhir:EvidenceVariable ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IntensiveCarePatients-ClinicallyFed-NoAdipositas"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable IntensiveCarePatients-ClinicallyFed-NoAdipositas</b></p><a name=\"IntensiveCarePatients-ClinicallyFed-NoAdipositas\"> </a><a name=\"hcIntensiveCarePatients-ClinicallyFed-NoAdipositas\"> </a><a name=\"IntensiveCarePatients-ClinicallyFed-NoAdipositas-en-US\"> </a><p><b>url</b>: <a href=\"EvidenceVariable-IntensiveCarePatients-ClinicallyFed-NoAdipositas.html\">EvidenceVariable Population: Intensive Care Patients that are clinically fed and have no Adipositas</a></p><p><b>name</b>: Population_IntensiveCarePatients_ClinicallyFed_NoAdipositas</p><p><b>title</b>: Population: Intensive Care Patients that are clinically fed and have no Adipositas</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>description</b>: </p><div><p>Intensive Care Patients that are clinically fed and have no Adipositas</p>\n</div><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 71388002}\">Procedure (procedure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 133903000}\">Care of Intensive Care Unit Patient</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 71388002}\">Procedure (procedure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 75118006}\">Feeding Patient</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 39156-5}\">Body Mass Index (BMI) [Ratio]</span></td><td>0-29.999999999 kg/m2</td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: true</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 103306004}\">Contraindication to</span></td><td><span title=\"Codes:{http://snomed.info/sct 229912004}\">Enteral Feeding</span></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_clinically-fed_no-adipositas"^^xsd:anyURI] ; # 
+  fhir:name [ fhir:v "Population_IntensiveCarePatients_ClinicallyFed_NoAdipositas"] ; # 
+  fhir:title [ fhir:v "Population: Intensive Care Patients that are clinically fed and have no Adipositas"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-08-12T09:30:16+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "Intensive Care Patients that are clinically fed and have no Adipositas"] ; # 
+  fhir:characteristic ( [
+     fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:definitionByTypeAndValue [
+       fhir:type [
+         fhir:coding ( [
+           a sct:71388002 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "71388002" ] ;
+           fhir:display [ fhir:v "Procedure (procedure)" ]
+         ] )
+       ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:133903000 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "133903000" ] ;
+           fhir:display [ fhir:v "Care of Intensive Care Unit Patient" ]
+         ] )
+       ]
+     ]
+  ] [
+     fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:definitionByTypeAndValue [
+       fhir:type [
+         fhir:coding ( [
+           a sct:71388002 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "71388002" ] ;
+           fhir:display [ fhir:v "Procedure (procedure)" ]
+         ] )
+       ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:75118006 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "75118006" ] ;
+           fhir:display [ fhir:v "Feeding Patient" ]
+         ] )
+       ]
+     ]
+  ] [
+     fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:definitionByTypeAndValue [
+       fhir:type [
+         fhir:coding ( [
+           a loinc:39156-5 ;
+           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "39156-5" ] ;
+           fhir:display [ fhir:v "Body Mass Index (BMI) [Ratio]" ]
+         ] )
+       ] ;
+       fhir:value [
+         a fhir:Range ;
+         fhir:low [
+           fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "kg/m2" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "kg/m2" ]
+         ] ;
+         fhir:high [
+           fhir:value [ fhir:v "29.999999999"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "kg/m2" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "kg/m2" ]
+         ]
+       ]
+     ]
+  ] [
+     fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:definitionByTypeAndValue [
+       fhir:type [
+         fhir:coding ( [
+           a sct:103306004 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "103306004" ] ;
+           fhir:display [ fhir:v "Contraindication to" ]
+         ] )
+       ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:229912004 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "229912004" ] ;
+           fhir:display [ fhir:v "Enteral Feeding" ]
+         ] )
+       ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

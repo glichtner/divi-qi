@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "DailySufficientFeeding",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition DailySufficientFeeding</b></p><a name=\"DailySufficientFeeding\"> </a><a name=\"hcDailySufficientFeeding\"> </a><a name=\"DailySufficientFeeding-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-DailySufficientFeeding.html\">ActivityDefinition The daily calorie intake is sufficient</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: DailySufficientFeeding</p><p><b>title</b>: The daily calorie intake is sufficient</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>The daily amount of calories matches the individual requirements.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 787787004}\">Calorie Intake</span></p><p><b>timing</b>: Once per1 days</p></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/daily-sufficient-feeding",
+  "version" : "7.0",
+  "name" : "DailySufficientFeeding",
+  "title" : "The daily calorie intake is sufficient",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-08-12T09:30:16+00:00",
+  "publisher" : "NUM CODEX+ CELIDA",
+  "description" : "The daily amount of calories matches the individual requirements.",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "787787004",
+      "display" : "Calorie Intake"
+    }]
+  },
+  "timingTiming" : {
+    "repeat" : {
+      "frequency" : 1,
+      "period" : 1,
+      "periodUnit" : "d"
+    }
+  }
+}

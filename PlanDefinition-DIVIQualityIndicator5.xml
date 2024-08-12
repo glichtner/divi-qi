@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="DIVIQualityIndicator5"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PlanDefinition DIVIQualityIndicator5</b></p><a name="DIVIQualityIndicator5"> </a><a name="hcDIVIQualityIndicator5"> </a><a name="DIVIQualityIndicator5-en-US"> </a><p><b>url</b>: <a href="PlanDefinition-DIVIQualityIndicator5.html">PlanDefinition DIVI Quality Indicator 5</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: DiVI_QualityIndicator_5</p><p><b>title</b>: DIVI Quality Indicator 5</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type workflow-definition}">Workflow Definition</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-03-29</p><p><b>publisher</b>: Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI)</p><p><b>description</b>: </p><div><p>DIVI Quality Indicator 5: Infection Prevention</p>
+</div><blockquote><p><b>action</b></p><p><b>title</b>: DIVI Quality Indicator 5a: Stop Orders for Invasive Devices</p><p><b>description</b>: </p><div><p>All Intensive Care Patients with invasive devices should have a daily re-evaluation regarding the necessity of each device.</p>
+</div><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based Care</span></p><p><b>definition</b>: <a href="PlanDefinition-StopOdersInvasiveDevices.html">Stop Orders for Invasive Devices</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: DIVI Quality Indicator 5b: Hand Disinfectant Consumption</p><p><b>description</b>: </p><div><p>The consumption of hand disinfectant should be more than 80 litres per 1000 days.</p>
+</div><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based Care</span></p><p><b>definition</b>: <a href="PlanDefinition-HandDisinfectantConsumption.html">Hand Disinfectant Consumption</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: DIVI Quality Indicator 5c: Infection-per-Device Ratio</p><p><b>description</b>: </p><div><p>The number of infections per invasive devices should be low.</p>
+</div><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based Care</span></p><p><b>definition</b>: <a href="PlanDefinition-InfectionDeviceRatio.html">Infection-per-Device Ratio</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: DIVI Quality Indicator 5d: Pneumonia-per-Ventilated-Patients Ratio</p><p><b>description</b>: </p><div><p>The number of pneumonia cases per ventilated patients should be low.</p>
+</div><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based Care</span></p><p><b>definition</b>: <a href="PlanDefinition-PenumoniaVentilatedPatientRatio.html">Pneumonia-per-Ventilated-Patients Ratio</a></p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="all"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-5"/>
+  <version value="1.0"/>
+  <name value="DiVI_QualityIndicator_5"/>
+  <title value="DIVI Quality Indicator 5"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="workflow-definition"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-03-29"/>
+  <publisher value="Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI)"/>
+  <description value="DIVI Quality Indicator 5: Infection Prevention"/>
+  <action>
+    <title value="DIVI Quality Indicator 5a: Stop Orders for Invasive Devices"/>
+    <description value="All Intensive Care Patients with invasive devices should have a daily re-evaluation regarding the necessity of each device."/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/stop-orders_invasive-devices"/>
+  </action>
+  <action>
+    <title value="DIVI Quality Indicator 5b: Hand Disinfectant Consumption"/>
+    <description value="The consumption of hand disinfectant should be more than 80 litres per 1000 days."/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/hand-disinfectant_consumption"/>
+  </action>
+  <action>
+    <title value="DIVI Quality Indicator 5c: Infection-per-Device Ratio"/>
+    <description value="The number of infections per invasive devices should be low."/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/infection-device-ratio"/>
+  </action>
+  <action>
+    <title value="DIVI Quality Indicator 5d: Pneumonia-per-Ventilated-Patients Ratio"/>
+    <description value="The number of pneumonia cases per ventilated patients should be low."/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/pneumonia-ventilated-patients-ratio"/>
+  </action>
+</PlanDefinition>

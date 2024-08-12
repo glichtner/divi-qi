@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="PeriodicAssessmentOfSedationAnalgesiaDelirium"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PlanDefinition PeriodicAssessmentOfSedationAnalgesiaDelirium</b></p><a name="PeriodicAssessmentOfSedationAnalgesiaDelirium"> </a><a name="hcPeriodicAssessmentOfSedationAnalgesiaDelirium"> </a><a name="PeriodicAssessmentOfSedationAnalgesiaDelirium-en-US"> </a><p><b>url</b>: <a href="PlanDefinition-PeriodicAssessmentOfSedationAnalgesiaDelirium.html">PlanDefinition Periodic Assessment of Sedation Level, Analgesia Level and Delirium Status</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: Intervention_PeriodicAssessment_Sedation_Analgesia_Delirium</p><p><b>title</b>: Periodic Assessment of Sedation Level, Analgesia Level and Delirium Status</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>subject</b>: <a href="EvidenceVariable-IntensiveCarePatients.html">Population: Intensive Care Patients</a></p><p><b>date</b>: 2024-03-29</p><p><b>description</b>: </p><div><p>Sedation Level, Analgesia Level and Delirium Status should be assessed at least once in each shift (time-slots 6-14, 14-22, 22-6) in all Intensive Care Patients.</p>
+</div><blockquote><p><b>action</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 74964007}">Other (qualifier value)</span></p><p><b>definition</b>: <a href="ActivityDefinition-SedationAssessmentEarlyShift.html">Sedation Assessment during Early Shift</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 74964007}">Other (qualifier value)</span></p><p><b>definition</b>: <a href="ActivityDefinition-SedationAssessmentLateShift.html">Sedation Assessment during Late Shift</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 74964007}">Other (qualifier value)</span></p><p><b>definition</b>: <a href="ActivityDefinition-SedationAssessmentNightShift.html">Sedation Assessment during Night Shift</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 74964007}">Other (qualifier value)</span></p><p><b>definition</b>: <a href="ActivityDefinition-PainAssessmentEarlyShift.html">Pain Assessment during Early Shift</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 74964007}">Other (qualifier value)</span></p><p><b>definition</b>: <a href="ActivityDefinition-PainAssessmentLateShift.html">Pain Assessment during Late Shift</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 74964007}">Other (qualifier value)</span></p><p><b>definition</b>: <a href="ActivityDefinition-PainAssessmentNightShift.html">Pain Assessment during Night Shift</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 74964007}">Other (qualifier value)</span></p><p><b>definition</b>: <a href="ActivityDefinition-DeliriumAssessmentEarlyShift.html">Delirium Assessment during Early Shift</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 74964007}">Other (qualifier value)</span></p><p><b>definition</b>: <a href="ActivityDefinition-DeliriumAssessmentLateShift.html">Delirium Assessment during Late Shift</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 74964007}">Other (qualifier value)</span></p><p><b>definition</b>: <a href="ActivityDefinition-DeliriumAssessmentNightShift.html">Delirium Assessment during Night Shift</a></p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf">
+    <valueCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommendation/DIVI-QualityIndicator-2"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="all"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/intervention/periodic-assessment_sedation_analgesia_delirium"/>
+  <version value="1.0"/>
+  <name value="Intervention_PeriodicAssessment_Sedation_Analgesia_Delirium"/>
+  <title value="Periodic Assessment of Sedation Level, Analgesia Level and Delirium Status"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <subjectCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients"/>
+  <date value="2024-03-29"/>
+  <description value="Sedation Level, Analgesia Level and Delirium Status should be assessed at least once in each shift (time-slots 6-14, 14-22, 22-6) in all Intensive Care Patients."/>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="74964007"/>
+        <display value="Other (qualifier value)"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/sedation-assessment-early-shift"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="74964007"/>
+        <display value="Other (qualifier value)"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/sedation-assessment-late-shift"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="74964007"/>
+        <display value="Other (qualifier value)"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/sedation-assessment-night-shift"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="74964007"/>
+        <display value="Other (qualifier value)"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/pain-assessment-early-shift"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="74964007"/>
+        <display value="Other (qualifier value)"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/pain-assessment-late-shift"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="74964007"/>
+        <display value="Other (qualifier value)"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/pain-assessment-night-shift"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="74964007"/>
+        <display value="Other (qualifier value)"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/delirium-assessment-early-shift"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="74964007"/>
+        <display value="Other (qualifier value)"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/delirium-assessment-late-shift"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="74964007"/>
+        <display value="Other (qualifier value)"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/delirium-assessment-night-shift"/>
+  </action>
+</PlanDefinition>

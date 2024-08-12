@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/CodeSystem/divi-qi-s> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "divi-qi-s"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem divi-qi-s</b></p><a name=\"divi-qi-s\"> </a><a name=\"hcdivi-qi-s\"> </a><a name=\"divi-qi-s-en-US\"> </a><p>This  code system <code>http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">VISITE-FA-ZB-ITS<a name=\"divi-qi-s-VISITE-FA-ZB-ITS\"> </a></td><td>Multidisciplinary ward round led by an intensive care specialist</td></tr><tr><td style=\"white-space:nowrap\">TAGESZIEL<a name=\"divi-qi-s-TAGESZIEL\"> </a></td><td>Setting daily treatment goals</td></tr><tr><td style=\"white-space:nowrap\">BPS<a name=\"divi-qi-s-BPS\"> </a></td><td>Behavioral Pain Scale</td></tr><tr><td style=\"white-space:nowrap\">CAM-ICU<a name=\"divi-qi-s-CAM-ICU\"> </a></td><td>CAM-ICU</td></tr><tr><td style=\"white-space:nowrap\">ICDSC<a name=\"divi-qi-s-ICDSC\"> </a></td><td>ICDSC</td></tr><tr><td style=\"white-space:nowrap\">EVAL-VENT-WEAN<a name=\"divi-qi-s-EVAL-VENT-WEAN\"> </a></td><td>Assessment of Readiness-to-wean from mechanical ventilation</td></tr><tr><td style=\"white-space:nowrap\">ORDER-NO-MOBIL<a name=\"divi-qi-s-ORDER-NO-MOBIL\"> </a></td><td>Order to not mobilize</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik"^^xsd:anyURI] ; # 
+  fhir:name [ fhir:v "DIVI_QI_S"] ; # 
+  fhir:title [ fhir:v "DIVI Sektion Qualitätsverbesserung und Informationstechnologie Qualitätsindikatoren Semantik"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-08-12T09:30:16+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "DIVI Sektion Qualitätsverbesserung und Informationstechnologie Qualitätsindikatoren Semantik"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "VISITE-FA-ZB-ITS" ] ;
+     fhir:display [ fhir:v "Multidisciplinary ward round led by an intensive care specialist" ]
+  ] [
+     fhir:code [ fhir:v "TAGESZIEL" ] ;
+     fhir:display [ fhir:v "Setting daily treatment goals" ]
+  ] [
+     fhir:code [ fhir:v "BPS" ] ;
+     fhir:display [ fhir:v "Behavioral Pain Scale" ]
+  ] [
+     fhir:code [ fhir:v "CAM-ICU" ] ;
+     fhir:display [ fhir:v "CAM-ICU" ]
+  ] [
+     fhir:code [ fhir:v "ICDSC" ] ;
+     fhir:display [ fhir:v "ICDSC" ]
+  ] [
+     fhir:code [ fhir:v "EVAL-VENT-WEAN" ] ;
+     fhir:display [ fhir:v "Assessment of Readiness-to-wean from mechanical ventilation" ]
+  ] [
+     fhir:code [ fhir:v "ORDER-NO-MOBIL" ] ;
+     fhir:display [ fhir:v "Order to not mobilize" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

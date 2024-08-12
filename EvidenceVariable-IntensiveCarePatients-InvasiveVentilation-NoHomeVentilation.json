@@ -1,0 +1,91 @@
+{
+  "resourceType" : "EvidenceVariable",
+  "id" : "IntensiveCarePatients-InvasiveVentilation-NoHomeVentilation",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable IntensiveCarePatients-InvasiveVentilation-NoHomeVentilation</b></p><a name=\"IntensiveCarePatients-InvasiveVentilation-NoHomeVentilation\"> </a><a name=\"hcIntensiveCarePatients-InvasiveVentilation-NoHomeVentilation\"> </a><a name=\"IntensiveCarePatients-InvasiveVentilation-NoHomeVentilation-en-US\"> </a><p><b>url</b>: <a href=\"EvidenceVariable-IntensiveCarePatients-InvasiveVentilation-NoHomeVentilation.html\">EvidenceVariable Population: Intensive Care Patients with Invasive Ventilation and no Home Ventilation</a></p><p><b>name</b>: Population_IntensiveCarePatients_InvasiveVentilation_NoHomeVentilation</p><p><b>title</b>: Population: Intensive Care Patients with Invasive Ventilation and no Home Ventilation</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>description</b>: </p><div><p>Intensive Care Patients with Invasive Ventilation and no Home Ventilation</p>\n</div><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 71388002}\">Procedure (procedure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 133903000}\">Care of Intensive Care Unit Patient</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 71388002}\">Procedure (procedure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 1258985005}\">Invasive mechanical ventilation</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: true</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 60631000119109}\">Dependence on home ventilator</span></td></tr></table><h3>TimeFromEvents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Event[x]</b></td><td><b>Range</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 305351004}\">Admission to Intensive Care Unit</span></td><td>?-0</td></tr></table></blockquote></div>"
+  },
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/population/intensive-care-patients_invasive-ventilation_no-home-ventilation",
+  "name" : "Population_IntensiveCarePatients_InvasiveVentilation_NoHomeVentilation",
+  "title" : "Population: Intensive Care Patients with Invasive Ventilation and no Home Ventilation",
+  "status" : "active",
+  "date" : "2024-08-12T09:30:16+00:00",
+  "description" : "Intensive Care Patients with Invasive Ventilation and no Home Ventilation",
+  "characteristic" : [{
+    "exclude" : false,
+    "definitionByTypeAndValue" : {
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "71388002",
+          "display" : "Procedure (procedure)"
+        }]
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "133903000",
+          "display" : "Care of Intensive Care Unit Patient"
+        }]
+      }
+    }
+  },
+  {
+    "exclude" : false,
+    "definitionByTypeAndValue" : {
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "71388002",
+          "display" : "Procedure (procedure)"
+        }]
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "1258985005",
+          "display" : "Invasive mechanical ventilation"
+        }]
+      }
+    }
+  },
+  {
+    "exclude" : true,
+    "definitionByTypeAndValue" : {
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "404684003",
+          "display" : "Clinical finding (finding)"
+        }]
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "60631000119109",
+          "display" : "Dependence on home ventilator"
+        }]
+      }
+    },
+    "timeFromEvent" : [{
+      "eventCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "305351004",
+          "display" : "Admission to Intensive Care Unit"
+        }]
+      },
+      "range" : {
+        "high" : {
+          "value" : 0,
+          "unit" : "day",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "d"
+        }
+      }
+    }]
+  }]
+}

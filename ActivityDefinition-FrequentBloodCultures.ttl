@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebmonfhir/example/ActivityDefinition/FrequentBloodCultures> a fhir:ActivityDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FrequentBloodCultures"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition FrequentBloodCultures</b></p><a name=\"FrequentBloodCultures\"> </a><a name=\"hcFrequentBloodCultures\"> </a><a name=\"FrequentBloodCultures-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-FrequentBloodCultures.html\">ActivityDefinition Frequent Blood Cultures</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: FrequentBloodCultures</p><p><b>title</b>: Frequent Blood Cultures</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2024-08-12 09:30:16+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>The Frequency of Blood Cultures is at least 80 per 1000 days.</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 30088009}\">Blood Culture</span></p><p><b>timing</b>: 80 per1000 days</p></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/DIVI-DigiQIs/recommended-action/frequent-blood-cultures"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "7.0"] ; # 
+  fhir:name [ fhir:v "FrequentBloodCultures"] ; # 
+  fhir:title [ fhir:v "Frequent Blood Cultures"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-12T09:30:16+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NUM CODEX+ CELIDA"] ; # 
+  fhir:description [ fhir:v "The Frequency of Blood Cultures is at least 80 per 1000 days."] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:30088009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "30088009" ] ;
+       fhir:display [ fhir:v "Blood Culture" ]
+     ] )
+  ] ; # 
+  fhir:timing [
+     a fhir:Timing ;
+     fhir:repeat [
+       fhir:frequency [ fhir:v "80"^^xsd:positiveInteger ] ;
+       fhir:period [ fhir:v "1000"^^xsd:decimal ] ;
+       fhir:periodUnit [ fhir:v "d" ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

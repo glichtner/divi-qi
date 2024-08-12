@@ -1,0 +1,30 @@
+{
+  "package": "template.cpg-on-ebmonfhir.netzwerk-universitaetsmedizin.de",
+  "version": "0.0.1-snapshot",
+  "fhirVersion": "5.0.0",
+  "extensions": [],
+  "profiles": {},
+  "usage": {
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability": [
+      "PlanDefinition"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel": [
+      "PlanDefinition"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf": [
+      "PlanDefinition"
+    ],
+    "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method": [
+      "PlanDefinition"
+    ]
+  }
+}
